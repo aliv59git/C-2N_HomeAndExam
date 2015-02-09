@@ -1,0 +1,369 @@
+aliv59git kajigithub59  
+https://aliv59-csharp1.googlecode.com/svn/trunk/
+YS3Cq3yW7vD5
+aliv59tfs  kajitfs59
+
+Split Strings in CSharp
+
+        char[] delimiterChars = { ' ', ',', '.', ':', '\t' };
+
+        string text = "one\ttwo three:four,five six seven";
+        System.Console.WriteLine("Original text: '{0}'", text);
+
+        string[] words = text.Split(delimiterChars);
+        System.Console.WriteLine("{0} words in text:", words.Length);
+
+        foreach (string s in words)
+        {
+            System.Console.WriteLine(s);
+        }
+
+        // Keep the console window open in debug mode.
+        System.Console.WriteLine("Press any key to exit.");
+        System.Console.ReadKey();
+
+Console.OutputEncoding = Encoding.UTF8; //За включване на кирилица на конзолата се задава шрифт в Propertyes на конзолата и се 		задава този ред за активиране на Encoding.UTF8 Също отгоре да има using System.Text; 
+
+		Console.WriteLine("{0,-15} | {1,10:F2} |", cola, colaPrice); //Печата ги като таблица
+		Console.WriteLine("{0,-15} | {1,10:F2} |", fanta, fantaPrice);
+		Console.WriteLine("{0,15} | {1,10:F2} |", zagorka, zagorkaPrice);
+		Console.WriteLine("{0,-15} | {1,10:F2} |", "Cheese", 9.786);
+
+		Console.WriteLine();
+		Console.WriteLine("The hex value of {0} is {0:X}.", 32378); // int -> hexadecimal
+
+        ConsoleKeyInfo numb = Console.ReadKey();
+        Console.WriteLine();
+        Console.WriteLine("Key Name: {0}, \nKeynumber: {1}, \nCharacter entered: {2} \nand Special keys: [{3}]", numb.Key, 
+		(int)numb.Key, numb.KeyChar, numb.Modifiers); //прочита въведения кей в комбинация с Crtl and Alt.
+
+        string str = Console.ReadLine(); // TryParse блокът
+        int number;
+        if (int.TryParse(str, out number))
+        {
+            Console.WriteLine("Valid number: {0}", number);
+        }
+        else
+        {
+            Console.WriteLine("Invalid number: {0}", str);
+        }
+
+// Change the decimal separator to "." Горе трябва да има:	using System.Threading;		using System.Globalization;
+	Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
+
+DateTime 
+	    Console.WriteLine("Please, enter you birthday: [year.month.day]");
+            DateTime birthday = DateTime.Parse(Console.ReadLine());
+            Console.WriteLine("You are entered: {0}", birthday);
+            DateTime now = DateTime.Now;
+            Console.WriteLine("Now is: {0}", now);
+            Console.WriteLine();
+            if (now.DayOfYear - birthday.DayOfYear < 0)
+            {
+                Console.WriteLine("You are {0} years old.", now.Year - birthday.Year - 1);
+                Console.WriteLine("After 10 years you will be {0} years old.", now.AddYears(10).Year - birthday.Year - 1);
+            }
+            else
+            {
+                Console.WriteLine("You are {0} years old.", now.Year - birthday.Year);
+                Console.WriteLine("After 10 years you will be {0} years old.", now.AddYears(10).Year - birthday.Year);
+            }
+
+Превръща в шестнадесетичен код:
+	Console.WriteLine(numb.ToString("X")); 	//може и   X2 X4 само Х или х х2 х4
+Превръща в двоичен код: 
+        Console.WriteLine(Convert.ToString(numb, 2).PadLeft(32, '0'));
+
+Отпечатване на ASCII таблицата:
+	    Console.OutputEncoding = Encoding.UTF8;
+            Console.Write("Decimal".PadRight(10));
+            Console.Write("ASCII".PadRight(10));
+            Console.Write("Hex".PadRight(10));
+            Console.WriteLine();
+            for (int i = 0; i < 256; i++)
+            {
+                char ch = (char)i;
+
+                string display = string.Empty;
+                if (char.IsWhiteSpace(ch))
+                {
+                    display = ch.ToString();
+                    switch (ch)
+                    {
+                        case '\t': display = "\\t"; break;
+                        case ' ': display = "space"; break;
+                        case '\n': display = "\\n"; break;
+                        case '\r': display = "\\r"; break;
+                        case '\v': display = "\\v"; break;
+                        case '\f': display = "\\f"; break;
+                    }
+                }
+                else if (char.IsControl(ch))
+                {
+                    display = "control";
+                }
+                else
+                {
+                    display = ch.ToString();
+                }
+                Console.Write(i.ToString().PadRight(10));
+                Console.Write(display.PadRight(10));
+                Console.Write(i.ToString("X2"));
+                Console.WriteLine();
+            }
+
+Екстрахиране на бит на позиция p:
+	int bit = number>>p & 1;
+
+Сетване на 1 на позиция p в числото n :
+	n |= (1<<p); 
+
+Сетване на 0 на позиция p в числото n :
+	n ^= (1<<p);
+
+Важно от домашните преходи: binary -> decimal; decimal -> binary; hexadecimal -> decimal; decimal -> hexadecimal
+//binary -> decimal;
+        string binary = Console.ReadLine();
+        int multiplyer = 1;
+        long result = 0;
+        for (int i = binary.Length; i > 0; i-- )
+        {
+            if (binary[i-1] == '1') result += multiplyer;
+            multiplyer *= 2;
+        }
+        Console.WriteLine(result);
+//decimal -> binary; 
+        long n = long.Parse(Console.ReadLine());
+        string binary="";
+        while (n != 0)
+        {
+            binary = binary + (n % 2); 
+            n /= 2;
+        }
+        char[] charArray = binary.ToCharArray();
+        Array.Reverse(charArray);
+        Console.WriteLine(string.Join("", charArray));
+//hexadecimal -> decimal;
+        string hex = Console.ReadLine();
+        long multiplyer = 1;
+        long result = 0;
+        long number;
+        for (int i = hex.Length; i > 0; i--)
+        {
+            if (hex[i - 1] < 58) result += multiplyer * (hex[i - 1] - '0' );
+            else result += multiplyer * (hex[i - 1] - 'A' + 10);
+            multiplyer *= 16;
+        }
+        Console.WriteLine(result);
+//decimal -> hexadecimal
+        long n = long.Parse(Console.ReadLine());
+        string hex = "";
+        while (n != 0)
+        {
+            switch (n % 16) {
+                case 10: 
+                    hex = hex + "A";
+                    break;
+                case 11:
+                    hex = hex + "B";
+                    break;
+                case 12:
+                    hex = hex + "C";
+                    break;
+                case 13:
+                    hex = hex + "D";
+                    break;
+                case 14:
+                    hex = hex + "E";
+                    break;
+                case 15:
+                    hex = hex + "F";
+                    break;
+                default: 
+                    hex = hex + (n % 16);
+                    break;
+            }
+            n /= 16;
+        }
+        //now we need to reverce it
+        char[] charArray = hex.ToCharArray();
+        Array.Reverse(charArray);
+        Console.WriteLine(string.Join("", charArray));
+
+SPIRAL MATRIX: 
+            Console.Write("Enter a positive number (1 -20) n = \n");
+            int num = int.Parse(Console.ReadLine()); ;
+            
+            int [,] matrix = new int [num,num];
+            int row = 0;
+            int col = 0;
+            string direction = "right";
+
+            int maxCounter = num * num;
+            if (1 <= num && num <= 20)
+            {
+                for (int i = 1; i <= maxCounter; i++)
+                {
+                    if (direction == "right" && (col > num - 1 || matrix[row, col] != 0))
+                    {
+                        direction = "down";
+                        col--;
+                        row++;
+                    }
+                    else if (direction == "down" && (row > num - 1 || matrix[row, col] != 0))
+                    {
+                        direction = "left";
+                        row--;
+                        col--;
+                    }
+                    else if (direction == "left" && (col < 0 || matrix[row, col] != 0))
+                    {
+                        direction = "up";
+                        col++;
+                        row--;
+                    }
+                    else if (direction == "up" && (row < 0 || matrix[row, col] != 0))
+                    {
+                        direction = "right";
+                        row++;
+                        col++;
+                    }
+                    matrix[row, col] = i;
+
+                    if (direction == "right")
+                    {
+                        col++;
+                    }
+                    else if (direction == "down")
+                    {
+                        row++;
+                    }
+                    else if (direction == "left")
+                    {
+                        col--;
+                    }
+                    else if (direction == "up")
+                    {
+                        row--;
+                    }
+                }
+
+
+                for (int i = 0; i < num; i++)
+                {
+                    for (int j = 0; j < num; j++)
+                    {
+                        Console.Write("{0,4}", matrix[i, j]);
+                    }
+                    Console.WriteLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Not a valid number");
+            }
+//Край на SpiralMatrix
+
+Сорс контрол системи
+
+SVN, GIT, TFS
+- Repository - сървър, който пази файловете
+- Revision, Version - индивидуално версия състояние на документа. 
+- Check out, Clone - сваля работещо копие на файловете от репозиторито на конкр. компютър в дадена директория. Възможно е да се заключат файловете lock (да не могат да се променят)
+- Change - промяна на локалния файл, който е под version control. 
+- Change set, Change list - всички промени по няколко файла, които са под контрол.
+- Commit, Check In - събмитва (качва) промените направени на локалното работно копие на репозиторито.(качва промененине файлове). Автоматично създава нова версия. Могат да възникнат конфликти. - Conflict - това за което споменахме.
+- Update, Get Latest Version, Fetch/Pull - download-ва последната версия на файловете от репозиторито на компютъра. 
+- Undo Check-Out, Revert/Undo Changes - Cancel локалните промени, възстановява тяхното състояние от репозиторито. 
+- Merge - комбинира промените на файл променен локално и едновременно в репозиторито. Автоматизира повечето случаи.
+- Label, Tag - маркиращи надписи с името на група от файлове в дадена версия. 
+- Branching - разделяне на репозиторито на няколко отделни работни потоци. 
+	Subversion - SVN http://subversion.tigris.org; GUI client - http://tortoisesvn.tigris.org; - от тук го изтегляме, инсталираме и в Windows Explorer-a се появяват нови менюта за работа с SVN: SVN Checkout и TortoiseSVN
+Създаваме си хранилище в Гугъл: отиваме в сайта CodeGoogle.com и там си създаваме нов проект (по който искаме да работим няколко човека) (в средата долу е). И попълваме формата за новия проект: Project name(с малки букви и тиренца само, трябва да е уникално име), Project Summary, и т.н. Пита ни какво искаме да използваме - Git, SVN, Mercurial. В Sorce Control License избираме MIT License - това е свободен от който си иска да го полза - безплатен лиценз. т.е. те не носят отговорност за файловете, всеки може да влиза да променя (когато е за Академията). Слагаме и Labeli-те след това. Примерно на първото поле пише Academic. И ни създава празно хостинг пространство. Ако отидем на Sorce, ще ни позволи да се свържем с това хранилище и да започнем да го използваме. Там в няколко реда е отбелязано какво трябва да се направи, за да се вържем към тази система. Вземаме някакъв линк (2 ред) копираме го, Отиваме в папката, в която искаме да си инициализираме, десен бутон - SVN CheckOut и пействаме в URL of repository; Като дадем О.К. ни дръпва в локалната директория всичко което е било в хостваното пространство. Сега там няма нищо и дръпва една празна директория, но има .svn поддиректория. Тя да не се трие! Там се записват всички промени, които са се случвали в хостваното пространство, т.е. в това хранилище. Съответно ние тук можем да дойдем, да си създадем нов проект с VS, да си инициализираме конзолно приложение, и съответно после да го качим в хранилището. Прави 1 текстови файл. После с десен бутон и ако отиде в SVN Update,  ако има някои промени във файловете в репозиторито, ще обнови промените оттам в нашата директория на компютъра. Ако не, ние с Commit му казваме: Я добави тези промени в репозиторито, т.е. там ще се качи нашия текстови файл. Излиза едно прозорче, в което е нашия .txt файл. Ако има и друг файл, ще се покажат и двата, и който чекнем, той ще се качи в репозиторито. Другото което е, при всяка една промяна, която сме правили, те се описват в прозореца горе. Това е за информация, която в даден момент може да бъде много важна - там се обяснява какво сме направили, какви промени сме направили в конкретните файлове, които качваме сега в репозиторито. Така ако искаме да върнем по-стара версия, можем по-лесно да се ориентираме, точно коя  да бъде тя. След това ще ни пита за Username и Password. Защото всички тези неща, които са качени в репозиторито са безплатни за ползване и четене, но не всеки може да ги променя. Т.е. Може да пипат само хората, на които са им дадени права. Username обикновено е и-мейла, който използваме в Google, Паролата е някаква, която се генерира на 3 ред в Sorce - под линка за URL адрес на репозиторито. Влизаме в линка и си копираме паролата. След попълване ина паролата и О.К. ние сме Commit-нали файловете в репозиторито и те изглеждат със зелен знак отпред в нашата директория. Ако е зелено - този файл е последната версия на файловете в репозиторито. Ако някой е пипнал по някой файл, ще се покаже по някакъв начин - няма да е зелено. Но не винаги ги ъпдейтва и рефрешва достатъчно бързо и адекватно. След това си отиваме в профила, намираме проекта, който сме създали, и отиваме на Sorce. И там в Browse после в trunk можем да видим всичко променено и всичко пипано. Ще си видим качените файлове. 
+
+Когато сме на друг компютър: С други думи ние от който и да е компютър като си влезе в профила в CodeGoogle.com  в линка Prject Information , Sorce, Check Out намираме линка на репозиторито, копираме го в клипборда, инсталираме си Tortoisesvn на този компютър, с нашата парола и нашия юзер нейм можем да дръпнем проекта или файловете. Тези файлове не всеки може да ги достъпва. Трябва да му дам права за това. Като цяло с Update - сваля от репозиторито в нашата директория, а с Commit - качва променените от нас в директорията файлове в репозиторито. 
+
+В Sorce - Changas - в репозиторито можем да разгледаме какви промени са правери и кога. Има и туул за сравняване на версиите (след десен бутон в нашата директория). В репозиторито - в Sorce - Administer - на всеки ред пишем и-мейл, който дава права кой може да променя в репозиторито. Към commitor-ите се слагат хора, които могат да променят - 5-те човека, които правят проекта. В репозиторито всичко е публично. Ако някой намери линка към него, може да го чете, да разглежда кода, но не може да го променя. 
+
+Като се отиде но другия компютър, първо се влиза в папката и се дава SVN Update, т.е. получават се последните промени, запазени в репозиторито и тогава се работи. Накрая се Commit-ва и се запазват промените в репозиторито и т.н.
+
+	Начини за работа със системите за сорс контрол
+Единия начин е току-що описания. Update - Commit и всеки юзър работи с хранилището (репозиторито). 
+Начинът по който GIT работи - За всеки юзър има съответстващо репозитори и той с Update - Commit обменя информация с него. Обаче самото това репозитори обменя информация с главното репозитори с Pull(==Update) и Push(==Commit). Главното репозитори е на сървъра. Ние сваляме от нашото локално репозитори и качване на него. (Update - Commite). В един момент който когато реши от своето локално репозитори качва на сървъра (Push). т.е. имаме още едно ниво, през което минава цялата кореспонденция. Така можем да си връщаме неща, без да качваме някои които не е сигурно че работят в главното репозитори и да затрудняваме останалите хора. 
+1. Модел Lock - Modify - Unlock Изчаква се, като цяло се бави проекта. Песимистичен конкурентен контрол.
+2. Copy - Modify - Merge Оптимистичен конкурентен контрол. Възможни са конфликти, когато няколко юзъра едитват един файл. Голяма част от процеса на мърчване е автоматизиран. 
+3. Distributed Version Control Юзъра работи на свое собствено репозитори, и от време на време качва в централното репозитори. Възможни са конфликти. Така работят Git, Merucrial (!=TFS). Конфликтите са много по-трудни за разрешаване. 
+	Проблемите с Lock-ването са, че може да се забрави да се Unlock-не. Проблеми при мържването. Трябва да се къмитва по-често, за да може ако има проблеми те да са върху малко код. Трябва да се къмитва само работещ код! Има различни туулове за мърджване. В зависимост от туула има различни оцветявания, но обикновено червеното означава проблемен код. 
+	Team Foundation Server (TFS) SCM репозитори от Майкрософт. Вграден е във Вижуъл Студио - Team Explorer - TFS client - free download from Microsoft, Fully integrated in VisualStudio.
+	CodePlex.com - from Microsoft за TFS. Създаваме си проект, след като се логнем. Подобно на SVN си създаваме свободно пространсвто с title,...описания и др. Отиваме на Sorce, 
+	Като отворим Вижуъл Студио няма да изберем New - Project, a New - Team Project...
+След като се създаде проект с CodePlex отиваме на Connect. за да го вържем с Visual Studio. В един отделен прозорец иска URL, към който трява да се вържем за да работи и UserName-a като последният е същият, който преди сме използвали за да работим в това хранилище. ..._cp Другото което правим във VS е десен бутон върху проекта и натискаме Add Solution to Sorce Control. Избираме TFS. Вдясно се пуска TeamExplorer. Указва се кой проект искаме да използваме. 
+ 
+	GitHub
+1. Теглим си GitBash - има Windows версия (msysGit) http://msysgit.github.com Препоръчителни опции при инсталацията са тези: 
+"Use GitBash only", "Check out Windows-style, commit Unix-Style endings" Използване на GitBash: 
+- Creating a local repository - git init; 
+- Preparing (adding/choosing) files for a commit - git add [filename] ("git add." adds everything)
+- Committing a local repository - git commit - m "[your message here]"
+Използваме обаче сайта github.com Влизаме, регистрираме, логваме се. Излиза GitHub Bootcamp (4 картинки с котета в жълто). 
+Системата, която ще ни тества се намира в профила на Николай Костов и е под Popular repositores - Open Judge System  и там са проектите. 
+Как да го използваме - горе в дясно има +- New Repository/New organization При организацията можем да си сетнем някакво място, където може да имаме много репозиторита. Правим ни Public repository В Readme файла се описват разни неща, какво върши този проект. Друго много важно нещо е да си добавим Git Ignor. Защото VS пълни проекта с .bin .obj, неща, които не са нужни. Сорс кода е мнопо пъти по-малък от тези две директорийки. И тръгва и без тях. т.е. те се генерират като се зареди проекта. Намираме под Public, Private .gitIgnore и там пишем в Add gitignor Visual Studio. Използваме MIT лиценза и му даваме Създаване на репозитори - Create Repository. След като сме го създали, трябва да си го дръпнем, за да работи  - гледаме отдясно при HTTPS Clone URL. Там има линк, към който ние трябва да се вържем, за да дръпнем това репозитори локално. за да работим в него. Другата възможност е Download ZIP, откъдето можем да си дръпнем цялата документация, но не можем да работим в екип с него. 
+	Има и GitHub for Windows - да не се ползва! Костенурката върши повече работа. Тя е на линка https://tortoise.git -> Download TortoiseGit  и го сваляме, но четем Important Notes, защото е изключително важно какво трябва да се инсталира. Трябва първо да инсталираме Git for Windows, и после да инсталираме TortoiseGit(Костенурката). Съответно Костенурката работи като SVN но за Git. Подобно на SVN в дадена папка поставяме URL адреса на Github repository-то. Създаде името на репозиторито и файловете в него. Отгоре има папка .git 
+  При комитването това действие става локално, т.е. към локалното репозитори, а не към главното. Ако дадем Revert - вече няма промени. т.е. връщаме се към предишната версия. За да отиде към главното репозитори, трябва да направим още една стъпка - След десен бутон да натиснем - Git Sync... и тогава да му дадем отдолу - Push. И тогава ни пита за Username и парола. След това си прави във Вижуъл Студио нов проект, иска да е в папката за GitHub Git - TestingGit. И го записва там и го огваря оттам. В папката като каже Git - Commit избира всичките променени файлове и ги къмитва. Но тези за къмитване са доста по-малко от това, което се съдържа по папките. Това е заради онзи Git Ignor, който добавихме. 
+	При GitHub: Инсталираме първо GitHub for Windows с по-горните настройки. След това инсталираме TortoiseGit. Отиваме в GitHub пространството, вземаме линка отдясно долу https://.... Като си създадем на компютъра папка за работа с GitHub  в нея даваме десен бутон -> GitClone и въвеждаме този линк. Тогава в тази директория се смъква съдържанието на репозиторито в GitHub което е било активно за този линк. Тогава ако променим нещо в папката в компютъра и Commit-вяме, нещата отиват в "master" - т.е междинното репозитори и оттам можем да връщаме версията или да комитваме много пъти. За да се качи в Главното репозитори (на сървъра) трябва да отидем в папката и да изберем след десен бутон Git Sync... и тогава с Push се качват нещата в главното репозитори. 
+
+За TFS правя регистрация в CodePlex, отивам в главната страница и там създавам репозитори.
+
+
+C#2 1. Arrays
+Алгоритъмът Binary Search: 
+        static int BinarySearch(int[] arr, int bestNumber)
+        {
+            int low = 0;
+            int high = arr.Length - 1;
+            int midpoint = 0;
+            while (low <= high)
+            {
+                midpoint = low + (high - low) / 2;
+                if (bestNumber == arr[midpoint])
+                {
+                    return midpoint;
+                }
+                else if (bestNumber < arr[midpoint])
+                {
+                    high = midpoint - 1;
+                }
+                else 
+                { 
+                    low = midpoint + 1;
+                }
+            }
+            // if item was not found
+            return -1;
+        }
+
+Класът Array: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
