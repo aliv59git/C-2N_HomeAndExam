@@ -38,6 +38,7 @@ namespace _17.SubsetKWithSumS
             {
                 string temp = Convert.ToString(i, 2);
                 currentSum = 0;
+                int count = 0;
                 for (int j = 0; j < temp.Length; j++)
                 {
                     int mask = 1 << j;
@@ -46,9 +47,10 @@ namespace _17.SubsetKWithSumS
                     {
                         currentSum += arr[j];
                         bestSubset.Add(arr[j]);
+                        count++;
                     }
                 }
-                if (currentSum == s)
+                if ((currentSum == s) && (count==k))
                 {
                     Console.WriteLine(string.Join(", ", bestSubset));
                     success = true;
