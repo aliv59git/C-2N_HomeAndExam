@@ -10,7 +10,7 @@ namespace _14.QuickSort
     {
         //•	Write a program that sorts an array of strings using the Quick sort algorithm.
 
-        static public int Partition(int[] arr, int left, int right)
+        public static int Partition(int[] arr, int left, int right)
         {
             int pivot = arr[left];
             while (true)
@@ -34,7 +34,7 @@ namespace _14.QuickSort
             }
         }
 
-        static public void QuickSort_Recursive(int[] arr, int left, int right)
+        public static void QuickSort_Recursive(int[] arr, int left, int right)
         {
             // For Recusrion
             if (left < right)
