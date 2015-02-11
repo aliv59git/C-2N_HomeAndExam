@@ -23,81 +23,57 @@ namespace _18.RemoveElementsFromArray
                 arr[i] = int.Parse(str[i]);
             }
             int bestCount = 0;
-            int bestInitialIndex = 0;
-            for (int j = 0; j < arr.Length; j++)
+            int currentCount = 0;
+            List<int> bestResult = new List<int>();
+            int t = 1;
+            for (int k = 0; k < arr.Length; k++)
             {
-                int currentCount = 1;
-                int left = arr[j];
-                for (int k = j+1; k < arr.Length; k++)
+                t *= 2;
+            }
+            for (int i = 0; i < t; i++)
+            {
+                for (int k = 0; k < arr.Length; k++)
+			    {
+                    bestSequence.Add(arr[k]);
+			    }
+                string temp = Convert.ToString(i, 2);
+                for (int j = 0; j < temp.Length; j++)
                 {
-                    int right = arr[k];
-                    if (left <= right)
+                    int mask = 1 << j;
+                    int bit = (i & mask) >> j;
+                    if (bit == 1)
                     {
-                        currentCount++;
+                        bestSequence.Remove(arr[j]);
                     }
                 }
-               if (bestCount < currentCount)
+                //has bestSequence increasing order?
+                bool isIncreasing = true;
+                for (int j = 0; j < bestSequence.Count - 1; j++)
                 {
-                    bestCount = currentCount;
-                    bestInitialIndex = j;
-                }
-            }
-            for (int u = bestInitialIndex; u < arr.Length; u++)
-            {
-                bestSequence.Add(arr[u]);
-            }
-            //has bestsequence increasing order?
-            bool isIncreasing = false;
-            while (isIncreasing != true)
-            {
-                for (int t = bestInitialIndex; t < arr.Length - 1; t++)
-                {
-                    if (!(arr[t] <= arr[t + 1]))
+                    if (!(bestSequence[j] <= bestSequence[j + 1]))
                     {
                         isIncreasing = false;
                     }
-                    else
+                }
+                int[] arrNew = new int[bestSequence.Count];
+                if (isIncreasing==true)
+                {
+                    currentCount = bestSequence.Count;
+                    if (currentCount > bestCount)
                     {
-                        isIncreasing = true;
+                        bestResult.Clear();
+                        bestCount = currentCount;
+                        for (int u = 0; u < bestSequence.Count; u++)
+                        {
+                            bestResult.Add(bestSequence[u]);
+                        }
                     }
-               }
+                }
+                currentCount = 0;
+                bestSequence.Clear();
+            }
+            Console.WriteLine(string.Join(", ", bestResult));
 
-                int temp = bestSequence.Max();
-                Console.WriteLine(temp);
-                bestSequence.Remove(temp);
-                int temp1 = bestSequence.Min();
-                bestSequence.Remove(temp1);
-                Console.WriteLine(temp1);
-            } 
-
-            //int m = 2;
-            //int first = bestInitialIndex;
-            //int second, third;
-            //while (bestInitialIndex+m<arr.Length)
-            //{
-            //    first += (m-2);
-            //    second = first + m-1;
-            //    third = first + m;
-            //    if (arr[second] >= arr[first] && arr[third] >= arr[second])
-            //    {
-            //        bestSequence.Add(arr[second]);
-            //        m++;
-            //    }
-            //    else if ((arr[second] > arr[first]) && ((arr[third] < arr[second]) && (arr[third] >= arr[first])))
-            //    {
-            //        bestSequence.Add(arr[third]);
-            //        m += 2;
-            //    }
-
-
-
-
-
-            //} 
-
-
-
-            Console.WriteLine(string.Join(", ", bestSequence));
         }
     }
 }
