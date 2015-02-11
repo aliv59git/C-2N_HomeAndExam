@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _21.CombinationsOfSet
+namespace _20_1_VariationsOfSet
 {
     class Program
     {
-//•	Write a program that reads two numbers N and K and generates all the 
-//    combinations of K distinct elements from the set [1..N].
+        //•	Write a program that reads two numbers N and K and generates all the variations 
+        //    of K elements from the set [1..N].
 
         static int n, k;
         static int[] arr;
@@ -31,10 +31,10 @@ namespace _21.CombinationsOfSet
             {
                 PrintArr();
                 currentPosition = k - 1;
-                arr[currentPosition]++;
+                arr[currentPosition] ++;
                 while (arr[currentPosition] > n)
                 {
-                    arr[currentPosition] = k+1;
+                    arr[currentPosition] = 1;
                     currentPosition--;
                     if (currentPosition < 0)
                     {
@@ -49,7 +49,7 @@ namespace _21.CombinationsOfSet
         {
             for (int i = 0; i < k; i++)
             {
-                arr[i] = i+1;
+                arr[i] = 1;
             }
         }
 
