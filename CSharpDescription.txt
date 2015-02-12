@@ -342,7 +342,60 @@ C#2 1. Arrays
             return -1;
         }
 
-Класът Array: 
+Важни команди и изрази при МАСИВИ лекцията:
+
+
+List<string> lsit OfStrings = new List<string>();
+
+string[] arrayOfStrings = {"Pesho", Ivan", "...};
+
+List<string> listOfStrings = new List<string>(arrayOfStrings);
+
+foreasch (string str in arrayOfStrings)
+{
+	listOfStrings.Add(str);
+}
+
+//pechat sas razdelitel ", "
+string numbersAsString = string.Join(", ", numbers); 
+Console.WriteLine(numbersAsString);
+
+ili
+int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+int[] copyNumbers = numbers;
+numbers[5] = -1111;
+Console.WriteLine(string.Join(", ", numbers));
+Console.WriteLine(string.Join(", ", copyNumbers));
+
+.Add  .Remove   .Capacity .Count   .Input  .RemoveAt(3)  pri List<>
+
+int[] copyArray = array;
+
+int[] copyArray = (int[])array.Clone();   
+
+List<int> list = new List<int>(){1, 2, 3, 4, 5, 6, 7};
+Console.WriteLine(string.Join(", ", list));
+list.Insert(2, -1);
+Console.WriteLine(string.Join(", ", list)); 
+
+хватки с List<>
+сортиране на елементите с  
+List<int> list = new List<int>(){9, 8, 4, 3, 5, 7};
+Console.WriteLine(string.Join(", ", list));
+list.Sort();
+Console.WriteLine(string.Join(", ", list));
+
+Отгоре добавя един метод
+using System.Linq;
+	този неймспейс дава страшно много методи. 
+Копиране на масиви
+int[] cloneAtrray = (int[])array.Clone();//metoda .Clone изкарва Object,
+	затова е закължително кастването с (int[]) отпред!!!
+	Подобно кастване се прави за преминаване към данни от съответния тип, след като операцията е
+		изкарала данни от друг тип. Тогава няма да даде грешка!.
+Копирането при List е различно:
+List<int> copyList = new List<int>(list);
+ 
 
 
 

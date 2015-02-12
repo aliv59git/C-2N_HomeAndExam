@@ -23,18 +23,42 @@ namespace _21.CombinationsOfSet
             NestedLoops();
         }
 
+        static void PrintArr()
+        {
+            Console.Write("{ ");
+            for (int i = 0; i < k; i++)
+            {
+                Console.Write("{0} ", arr[i]);
+            }
+            Console.Write(" }");
+            Console.WriteLine();
+        }
+
         static void NestedLoops()
         {
             InitLoops();
             int currentPosition;
             while (true)
             {
-                PrintArr();
+                bool isIncreasing = true;
+                for (int u = 0; u < arr.Length-1; u++)
+                {
+                    if (arr[u+1] <= arr[u])
+                    {
+                        isIncreasing = false;
+                    }
+                }
+                
+                if (isIncreasing)
+                {
+                    PrintArr();
+                }
+
                 currentPosition = k - 1;
                 arr[currentPosition]++;
                 while (arr[currentPosition] > n)
                 {
-                    arr[currentPosition] = k+1;
+                    arr[currentPosition] = k;
                     currentPosition--;
                     if (currentPosition < 0)
                     {
@@ -49,19 +73,8 @@ namespace _21.CombinationsOfSet
         {
             for (int i = 0; i < k; i++)
             {
-                arr[i] = i+1;
+                arr[i] = i + 1;
             }
-        }
-
-        static void PrintArr()
-        {
-            Console.Write("{ ");
-            for (int i = 0; i < k; i++)
-            {
-                Console.Write("{0} ", arr[i]);
-            }
-            Console.Write(" }");
-            Console.WriteLine();
         }
     }
 }

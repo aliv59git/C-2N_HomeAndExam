@@ -27,13 +27,7 @@ namespace _20.VariationsOfSet
         {
             if (currentNumb == k)
             {
-                Console.Write("{ ");
-                for (int i = 0; i < k; i++)
-                {
-                    Console.Write("{0} ", arr[i]);
-                }
-                Console.Write(" }");
-                Console.WriteLine();
+                PrintArr();
                 return;
             }
             for (int j = 1; j <=n ; j++)
@@ -41,6 +35,17 @@ namespace _20.VariationsOfSet
                 arr[currentNumb] = j;
                 NestedLoops(currentNumb + 1);
 			}
+        }
+
+        static void PrintArr()
+        {
+            Console.Write("{ ");
+            for (int i = 0; i < k; i++)
+            {
+                Console.Write("{0} ", arr[i]);
+            }
+            Console.Write(" }");
+            Console.WriteLine();
         }
     }
 }
