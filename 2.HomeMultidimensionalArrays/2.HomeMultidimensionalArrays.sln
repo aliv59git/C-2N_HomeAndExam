@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.FillTheMatrix", "1.FillTheMatrix\1.FillTheMatrix.csproj", "{2A220FB7-EA6B-4D9E-9E0A-4254F19A7466}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.MaximalSum", "2.MaximalSum\2.MaximalSum.csproj", "{66042E92-16A7-444A-AADA-84242344CDD6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A220FB7-EA6B-4D9E-9E0A-4254F19A7466}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A220FB7-EA6B-4D9E-9E0A-4254F19A7466}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A220FB7-EA6B-4D9E-9E0A-4254F19A7466}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A220FB7-EA6B-4D9E-9E0A-4254F19A7466}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66042E92-16A7-444A-AADA-84242344CDD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66042E92-16A7-444A-AADA-84242344CDD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66042E92-16A7-444A-AADA-84242344CDD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66042E92-16A7-444A-AADA-84242344CDD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
