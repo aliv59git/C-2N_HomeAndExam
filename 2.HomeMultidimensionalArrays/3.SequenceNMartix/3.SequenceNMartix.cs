@@ -38,8 +38,8 @@ namespace _3.SequenceNMartix
                 for (int col = 0; col < m; col++)
                 {
                     //by 1 row
-                    int count = 1;
-                    int columns = col++;
+                    int count = 0;
+                    int columns = col;
                     while (columns < m)
                     {
                         bool isEqual = CompareStrings(strMatrix[row, col], strMatrix[row, columns]);
@@ -57,16 +57,12 @@ namespace _3.SequenceNMartix
                                 bestRow = row;
                                 bestCol = col;
                             }
-                            break;
+							break;
                         }
                     }
                     //by column
-                    int countRow = 1;
-                    int rows = n;
-                    if (row < n - 1)
-                    {
-                        rows = row++;
-                    } 
+                    int countRow =0;
+                    int rows = row;
                     while (rows < n)
                     {
                         bool isEqual = CompareStrings(strMatrix[row, col], strMatrix[rows, col]);
@@ -84,19 +80,13 @@ namespace _3.SequenceNMartix
                                 bestRow = row;
                                 bestCol = col;
                             }
-                            break;
+							break;
                         }
                     }
                     //by diagonal
-                    int countDiag = 1;
-                    int rowD = n;
-                    int colD = m;
-                    if ((row < n - 1) && (col < m - 1))
-                    {
-                        rowD = row++;
-                        colD = col++;
-                    }
-
+                    int countDiag = 0;
+                    int rowD = row;
+                    int colD = col;
                     while ((rowD < n) && (colD < m))
                     {
                         bool isEqual = CompareStrings(strMatrix[row, col], strMatrix[rowD, colD]);
@@ -120,6 +110,7 @@ namespace _3.SequenceNMartix
                     }
                 }
             }
+	
             Console.WriteLine("Initial matrix printing");
             for (int i = 0; i < n; i++)
             {
@@ -129,13 +120,15 @@ namespace _3.SequenceNMartix
                 }
                 Console.WriteLine();
             }
+
             Console.WriteLine("Result");
             for (int k = 0; k < bestCount; k++)
             {
-                Console.Write("{0}  ", bestStr);
+                Console.Write("{0}   ", bestStr);
             }
+            Console.WriteLine();
             Console.WriteLine("Best row: {0}, best col: {1}", bestRow, bestCol);
-
+            Console.WriteLine("Best Count = {0}", bestCount);
         }
 
         static bool CompareStrings(string str1, string str2)
@@ -150,7 +143,7 @@ namespace _3.SequenceNMartix
             {
                 for (int i = 0; i < str1.Length; i++)
                 {
-                    if (str1[i] != str2[i])
+                    if (str1[i] - str2[i] != 0)
                     {
                         isEqual = false;
                         return isEqual;

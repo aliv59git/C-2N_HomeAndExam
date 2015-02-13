@@ -24,38 +24,28 @@ namespace _4.BinarySearch
                 arr[i] = int.Parse(str[i]);
 			}
             Console.WriteLine();
-            Console.WriteLine(string.Join(", ", arr));
             Console.WriteLine("Please, enter intiger K = ");
             int k = int.Parse(Console.ReadLine());
+
             Array.Sort(arr);
-            int index = int.MinValue;
-            if(k >= arr[n-1] || k <= arr[0])
+            int index = -1;
+            if(k >= arr[n-1])
             {
                 index = n - 1;
                 Console.WriteLine("Largest number <= K is: {0}", index);
             }
-            int left = 0;
-            int right = n - 1;
-            while (left < right)
+            else if (k < arr[0])
             {
-                int middle = left + (right - left)/2;
-                if (arr[middle] == k)
-                {
-                    Console.WriteLine("Largest number <= K is: {0}", middle);
-                }
-                else if (arr[middle] < k)
-                {
-                    left = middle;
-                }
-                else if (arr[middle] > k)
-                {
-                    right = middle;
-                }
+                Console.WriteLine("There is not a number <=K in the array.");
             }
-            Console.WriteLine("Largest number <= K is: {0}", left);
+            while (index < 0)
+            {
+                index = Array.BinarySearch(arr, k);
+                k--;
+            }
+            Console.WriteLine("Ordered array is: \n{0}", string.Join(", ", arr));
+            Console.WriteLine("Largest number <= K is: {0} and it is at {1} position", arr[index], index);
 
-            //index = Array.BinarySearch(arr, k);
-            //Console.WriteLine(index);
         }
     }
 }
