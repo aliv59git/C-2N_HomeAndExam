@@ -1,0 +1,118 @@
+
+
+Важни команди и изрази при МАСИВИ лекцията:
+
+
+List<string> lsitOfStrings = new List<string>();
+
+string[] arrayOfStrings = {"Pesho", Ivan", "...};
+
+List<string> listOfStrings = new List<string>(arrayOfStrings);
+
+foreasch (string str in arrayOfStrings)
+{
+	listOfStrings.Add(str);
+}
+
+//pechat sas razdelitel ", "
+string numbersAsString = string.Join(", ", numbers); 
+Console.WriteLine(numbersAsString);
+
+ili
+int[] numbers = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+int[] copyNumbers = numbers;
+numbers[5] = -1111;
+Console.WriteLine(string.Join(", ", numbers));
+Console.WriteLine(string.Join(", ", copyNumbers));
+
+.Add  .Remove   .Capacity .Count   .Input  .RemoveAt(3)  pri List<>
+
+int[] copyArray = array;
+
+int[] copyArray = (int[])array.Clone();   
+
+List<int> list = new List<int>(){1, 2, 3, 4, 5, 6, 7};
+Console.WriteLine(string.Join(", ", list));
+list.Insert(2, -1);
+Console.WriteLine(string.Join(", ", list)); 
+
+хватки с List<>
+сортиране на елементите с  
+List<int> list = new List<int>(){9, 8, 4, 3, 5, 7};
+Console.WriteLine(string.Join(", ", list));
+list.Sort();
+Console.WriteLine(string.Join(", ", list));
+
+Отгоре добавя един метод
+using System.Linq;
+	този неймспейс дава страшно много методи. 
+Копиране на масиви
+int[] cloneAtrray = (int[])array.Clone();//metoda .Clone изкарва Object,
+	затова е закължително кастването с (int[]) отпред!!!
+	Подобно кастване се прави за преминаване към данни от съответния тип, след като операцията е
+		изкарала данни от друг тип. Тогава няма да даде грешка!.
+Копирането при List е различно:
+List<int> copyList = new List<int>(list);
+
+
+Сортиране на масиви
+public class SortingArrays
+{
+    private static void Main()
+    {
+        int[] numbers = { 1, 2, 5, 10, 11 };
+
+        Array.Sort(numbers, new NumbersComparer());
+
+        Console.WriteLine("Numbers sorted by modul 5");
+        foreach (int number in numbers)
+        {
+            Console.WriteLine(number);
+        }
+
+        Console.WriteLine();
+
+        Array.Sort(numbers, (x, y) => (y % 6).CompareTo(x % 6));
+
+        Console.WriteLine("Numbers sorted descending:");
+        foreach (int number in numbers)
+        {
+            Console.WriteLine(number);
+        }
+
+        Console.WriteLine();
+
+        string[] students = { "Doncho Minkov", "Nikolay Kostov", "Ivaylo Kenov", "Evlogi Hristov" };
+        Array.Sort(students, new StudentsComparer());
+        foreach (string student in students)
+        {
+            Console.WriteLine(student);
+        }
+    }
+
+    private class NumbersComparer : IComparer<int>
+    {
+        public int Compare(int x, int y)
+        {
+            return (x % 5).CompareTo(y % 5);
+        }
+    }
+
+    private class StudentsComparer : IComparer<string>
+    {
+        public int Compare(string student1, string student2)
+        {
+            var lastName1 = student1.Substring(student1.IndexOf(' ') + 1);
+            var lastName2 = student2.Substring(student2.IndexOf(' ') + 1);
+            return lastName1.CompareTo(lastName2);
+        }
+    }
+}
+
+Методи (функции, с и без параметри)
+
+Всеки метод има име, с което се извиква и описва неговата цел. Декларират се в class. Main() е също метод като другите. 
+static - методът може да се извиква от всеки друг метод, статичен или не.
+void - методът не връща някакъв резултат. Т.е. извършва действие при извикването си, но не връща резултат. 
+Могат да се извикват от всеки друг метод, вкюлчително и от себе си(подобно на рекурсия). 
+

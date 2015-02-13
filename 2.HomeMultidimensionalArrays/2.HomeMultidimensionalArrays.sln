@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.FillTheMatrix", "1.FillTh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.MaximalSum", "2.MaximalSum\2.MaximalSum.csproj", "{66042E92-16A7-444A-AADA-84242344CDD6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.SequenceNMartix", "3.SequenceNMartix\3.SequenceNMartix.csproj", "{2AB2DE50-CA63-40D1-A977-774DAA0D1461}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.BinarySearch", "4.BinarySearch\4.BinarySearch.csproj", "{26560E1C-3700-4B14-BC08-9329CE3A6234}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{66042E92-16A7-444A-AADA-84242344CDD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66042E92-16A7-444A-AADA-84242344CDD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66042E92-16A7-444A-AADA-84242344CDD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB2DE50-CA63-40D1-A977-774DAA0D1461}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AB2DE50-CA63-40D1-A977-774DAA0D1461}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AB2DE50-CA63-40D1-A977-774DAA0D1461}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AB2DE50-CA63-40D1-A977-774DAA0D1461}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26560E1C-3700-4B14-BC08-9329CE3A6234}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26560E1C-3700-4B14-BC08-9329CE3A6234}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26560E1C-3700-4B14-BC08-9329CE3A6234}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26560E1C-3700-4B14-BC08-9329CE3A6234}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
