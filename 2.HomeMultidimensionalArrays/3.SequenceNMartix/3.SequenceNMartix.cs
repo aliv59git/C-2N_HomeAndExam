@@ -47,6 +47,13 @@ namespace _3.SequenceNMartix
                         {
                             count++;
                             columns++;
+                            if (count > bestCount)
+                            {
+                                bestCount = count;
+                                bestStr = strMatrix[row, col];
+                                bestRow = row;
+                                bestCol = col;
+                            }
                         }
                         else
                         {
@@ -70,6 +77,13 @@ namespace _3.SequenceNMartix
                         {
                             countRow++;
                             rows++;
+                            if (countRow > bestCount)
+                            {
+                                bestCount = countRow;
+                                bestStr = strMatrix[row, col];
+                                bestRow = row;
+                                bestCol = col;
+                            }
                         }
                         else
                         {
@@ -95,6 +109,13 @@ namespace _3.SequenceNMartix
                             countDiag++;
                             rowD++;
                             colD++;
+                            if (countDiag > bestCount)
+                            {
+                                bestCount = countDiag;
+                                bestStr = strMatrix[row, col];
+                                bestRow = row;
+                                bestCol = col;
+                            }
                         }
                         else
                         {
@@ -110,21 +131,21 @@ namespace _3.SequenceNMartix
                     }
                 }
             }
-	
-            Console.WriteLine("Initial matrix printing");
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < m; j++)
-                {
-                    Console.Write("{0}  ", strMatrix[i, j]);
-                }
-                Console.WriteLine();
-            }
-
+            //Console.WriteLine();
+            //Console.WriteLine("Initial matrix printing");
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for (int j = 0; j < m; j++)
+            //    {
+            //        Console.Write("{0}  ", strMatrix[i, j]);
+            //    }
+            //    Console.WriteLine();
+            //}
+            Console.WriteLine();
             Console.WriteLine("Result");
             for (int k = 0; k < bestCount; k++)
             {
-                Console.Write("{0}   ", bestStr);
+                Console.Write("{0}, ", bestStr);
             }
             Console.WriteLine();
             Console.WriteLine("Best row: {0}, best col: {1}", bestRow, bestCol);
