@@ -40,17 +40,12 @@ namespace _6.MatrixClass
                 }
             }
 
-
-
-
-
-
-
+            
 
         }
     }
 
-    public class Matrix :IEnumerable<int> 
+    public class Matrix : IEnumerable<int> 
     {
         public int[,] Adding(int[,] matr1, int[,] matr2)
         {
@@ -161,14 +156,42 @@ namespace _6.MatrixClass
             return result;
         }
 
-        public int CompareTo(object obj)
+        public int CompareTo(int[,] matr1, int[,] matr2)
         {
-            throw new NotImplementedException();
+            if(!((matr1.GetLength(0)==matr2.GetLength(0)) & (matr1.GetLength(1)==matr2.GetLength(1))))
+            {
+                return -1;
+            }
+            for (int i = 0; i < matr2.GetLength(0); i++)
+            {
+                for (int j = 0; j < matr2.GetLength(1); j++)
+                {
+                    if (matr1[i, j] != matr2[i, j])
+                    {
+                        return -1;
+                    }
+                }
+            }
+            return 1;
         }
 
         int IComparable.CompareTo(object obj)
         {
             throw new NotImplementedException();
         }
+
+        static void PrintMatrix(int[,] matrix)
+        {
+            for (int i = 0; i < matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < matrix.GetLength(1); j++)
+                {
+                    Console.Write("{0}  ", matrix[i, j]);
+                }
+                Console.WriteLine();
+            }
+        }
+
+
     }
 }
