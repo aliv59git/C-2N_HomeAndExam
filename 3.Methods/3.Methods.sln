@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11.AddingPolynomals", "11.A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12.SubtractingPolynomals", "12.SubtractingPolynomals\12.SubtractingPolynomals.csproj", "{6B1F2FB5-0E83-42C5-9A5C-717FB960013F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "13.SolveTasks", "13.SolveTasks\13.SolveTasks.csproj", "{56E8F53A-47A9-459D-9F82-E13ADBF48ED5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.IntigerCalculations", "14.IntigerCalculations\14.IntigerCalculations.csproj", "{D8EBDE02-F56B-494F-A695-30D958158514}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +91,14 @@ Global
 		{6B1F2FB5-0E83-42C5-9A5C-717FB960013F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B1F2FB5-0E83-42C5-9A5C-717FB960013F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B1F2FB5-0E83-42C5-9A5C-717FB960013F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56E8F53A-47A9-459D-9F82-E13ADBF48ED5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56E8F53A-47A9-459D-9F82-E13ADBF48ED5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56E8F53A-47A9-459D-9F82-E13ADBF48ED5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56E8F53A-47A9-459D-9F82-E13ADBF48ED5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8EBDE02-F56B-494F-A695-30D958158514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8EBDE02-F56B-494F-A695-30D958158514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8EBDE02-F56B-494F-A695-30D958158514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8EBDE02-F56B-494F-A695-30D958158514}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
