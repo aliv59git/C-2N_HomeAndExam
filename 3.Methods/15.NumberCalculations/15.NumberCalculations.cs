@@ -4,16 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _14.IntigerCalculations
+namespace _15.NumberCalculations
 {
     class Program
     {
-        //•	Write methods to calculate minimum, maximum, average, sum and product of given set of integer numbers.
-        //•	Use variable number of arguments.
+//•	Modify your last program and try to make it work for any number type, not just integer 
+//    (e.g. decimal, float, byte, etc.)
+//•	Use generic method (read in Internet about generic methods in C#).
 
-        static int MaxNumber(int[] array = null)
+
+        static double MaxNumber(double[] array = null)
         {
-            int result = array[0];
+            double result = array[0];
             for (int i = 1; i < array.Length; i++)
             {
                 if (array[i] > result)
@@ -23,9 +25,9 @@ namespace _14.IntigerCalculations
             }
             return result;
         }
-        static int MinNumber(int[] array = null)
+        static double MinNumber(double[] array = null)
         {
-            int result = array[0];
+            double result = array[0];
             for (int i = 1; i < array.Length; i++)
             {
                 if (array[i] < result)
@@ -35,27 +37,27 @@ namespace _14.IntigerCalculations
             }
             return result;
         }
-        static double Average(int[] array = null)
+        static double Average(double[] array = null)
         {
-            int result = 0;
+            double result = 0;
             for (int i = 0; i < array.Length; i++)
             {
                 result += array[i];
             }
-            return (double)result/array.Length;
+            return result / array.Length;
         }
-        static int SumOfNumbers(int[] array = null)
+        static double SumOfNumbers(double[] array = null)
         {
-            int result = 0;
+            double result = 0;
             for (int i = 0; i < array.Length; i++)
             {
                 result += array[i];
             }
             return result;
         }
-        static long ProductOfNumbers(int[] array = null)
+        static double ProductOfNumbers(double[] array = null)
         {
-            long result = 1;
+            double result = 1;
             for (int i = 0; i < array.Length; i++)
             {
                 result *= array[i];
@@ -64,12 +66,12 @@ namespace _14.IntigerCalculations
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Please, enter elements af an intiger array, separated by comma and space: ");
+            Console.WriteLine("Please, enter elements af an array, separated by comma and space: ");
             string[] str = Console.ReadLine().Split(',');
-            int[] arr = new int[str.Length];
+            double[] arr = new double[str.Length];
             for (int i = 0; i < str.Length; i++)
             {
-                arr[i] = int.Parse(str[i]);
+                arr[i] = double.Parse(str[i]);
             }
             Console.WriteLine();
             Console.WriteLine("Maximal element is: {0}", MaxNumber(arr));
