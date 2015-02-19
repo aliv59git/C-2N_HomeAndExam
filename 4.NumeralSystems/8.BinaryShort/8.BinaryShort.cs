@@ -14,11 +14,11 @@ namespace _8.BinaryShort
         static string SignedShortToBinary(short number)
         {
             string result = String.Empty;
-            bool signed = false;
+            bool isSigned = false;
             if (number < 0)
             {
-                signed = true;
-                number = (short)-number;
+                isSigned = true;
+                number = (short)(32768 + number);
             }
             while (number > 0)
             {
@@ -26,13 +26,19 @@ namespace _8.BinaryShort
                 number /= 2;
             }
             char[] resA = result.ToCharArray();
-            string result1 = string.Join("", resA.Reverse()).PadLeft(16, '0');
+            string result1 = String.Empty;
+            string res1 = String.Empty;
+            if (!isSigned)
+            {
+                res1 = string.Join("", resA.Reverse()).PadLeft(16, '0');
+                result1 = res1;
+            }
+            else if (isSigned)
+            {
+                res1 = string.Join("", resA.Reverse()).PadLeft(15, '0');
+                result1 = 1 + res1;
+            }
             
-            //if (signed)
-            //{
-            //    ~result;  
-            //}
-
             return result1;
         }
 
