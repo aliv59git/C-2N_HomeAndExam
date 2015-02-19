@@ -60,7 +60,7 @@ namespace _5.HexadecimalToBinary
             return result;
         }
 
-        static string HexadecimalToBinaryDirect(string str)
+        static string HexadecimalToBinaryDirect(string str) //direct conversion Hexadecimal -> Binary
         {
             string result = String.Empty;
             for (int i = 0; i < str.Length; i++)
