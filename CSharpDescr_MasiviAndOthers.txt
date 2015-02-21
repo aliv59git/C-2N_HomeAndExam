@@ -208,13 +208,26 @@ enum Color
 CTS Type: Int32, Single, Boolean, Double, String, Object Абсолютно всичко е обект. Всеки обект има ToString(); Equals(), GetHashCode(); GetType();  Equals()- сравнява два обекта, които не знаем как да сравняваме, дали са на едно и също място в паметта 
 object list = new List<int>(); var name = list.GetTipe().Name; Console.WriteLine(name); ше върне List.
 
+Важно!! При DateTime temp = now.AddDays(i) - можем да правим нова дата като добавяме дни. 
 
 
-
-
-
-
-
+Стрингове и текстообработка
+Всеки стринг е read-only; При всяка операция върху стрингове се създава нов стринг с крайния резултат. Референтен тип, но се държи като приминивни данни. Стринговете са обекти, подобни на чар масив. Има String.Length. По индексатор може да се взема всяка отделна буквичка. Сравняване на стрингове: 
+	"abc"CompareTo("abcd") - лексикографски сравнява;    Case-insensitive: 
+int result = string.Compare(str1, str2, true); result==0 (//str1=str2); result<0 //str1 before str2; result > 0 //str1 after str2.
+	Case-sensitive: string.Compare(str1, str2, false);  string.Compare("abc", "ABC", false) дава -1, т.е. "abc" е преди "ABC".
+но интересни са случаите: string.Compare("BAC", "abc", false) //1, т.е. abc е първо; Сравнява като в речник, по азбучен ред, първо малки букви, после големи. Ако искаме лексикографски да сравним, трябва да сравняваме буква по буква. cw("pesho"=="gosho") Сравнява двата стринга //false; if(str1==str2) или if(str1.Equals(str2)) Тези сравнения са Case-sensitive; Pesho"=="pesho"//false
+	Важно!!! Едната задача за изпита - от динамично оптимиране. Но се решават всяка по различен начин. 
+        string[] texts = { "6", "2", "4", "-1", "3" };
+        string minText = texts[0];
+        for (int i = 1; i < texts.Length; i++)
+        {
+            if (string.Compare(minText, texts[i], false) > 0)
+            {
+                minText = texts[i];
+            }
+        }
+	Console.WriteLine(minText);
 
 
 
