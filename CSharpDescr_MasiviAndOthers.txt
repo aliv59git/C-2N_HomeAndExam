@@ -228,19 +228,49 @@ int result = string.Compare(str1, str2, true); result==0 (//str1=str2); result<0
             }
         }
 	Console.WriteLine(minText);
-
-
-
-
-
-
-
-
-
-
-
-
-
+Търсене в стрингове: IndexOf(string str); IndexOf(string str, int startIndex); lastIndexOf(string); string text ="pesho";
+int index = text.IndexOf("pes", 3); Ако не намери индекса, дава -1; IndexOf is case-sensitive.
+string subStr = text.Substring(5, 3) - от 5 елемент с дължина 3 символа прави нов субстринг. на практика взема от 5-тия символ включително до (5+3-1)-тия символ, т.е. до 7-мия символ. Ако е text.Substring(5) взема от 5-тия до края всичко.
+Важно!! Как се сплитва стринг с много spaces между елементите. Става с този израз: 
+	string[] numb = text.Split(new char[]{ ' ', ','}, StringSplitOptions.RemoveEmptyEntries); Но може да сплитне и по стринг масив: string[] numb = text.Split(new string[]{" ", ",", "pesho"}, StringSplitOptions.RemoveEmptyEntries);
+Съкратен начин за парсване на стринг, прочетен от конзолата: Важен начин за директно парсване на числа!!!
+int[] numbers = Console.ReadLine().Split(new char[] {' ', ',', '.'}, StringSplitOptions.Remove EmptyEntries).
+Select(int.Parse).ToArray(); -Последната част е: за всеки стринг след разделянето го парсни до инт и го направи на масив.
+	Други операции със стрингове: Replace(), Remove(), Трябва последователно: string str = text.Replace('e', '!');  и
+Console.WriteLine(str); Може и да има наслагване на реплейса:   Replace работи както по символи, така и по стрингове. 
+string newString = text.Replace("Pe", "Go").Replace("sho", "ivan").Replace("Ivan", "Mariq"); 
+	Remove(3, 5) - маха елементите от 3-ти индекс до (3+5-1)-ти индекс.  Remove(3) - маха всичко след 3-тия. Т.е. работи като субстринг, но обратното на това което дава субстринг. 
+	ToLower()  ToUpper() - правят на всички големи на малки букви и обратното. 
+Trim() - маха празни интервали, табулации и т.н. strNew = text.Trim(); TrimStart()-трие само отпред; TrimEnd()-само отзад
+Може да се използва и по специален начин: text.Trim('a');-всичко което започва с 'а' е изтрито, останалото остава. Ако а е по средата на дума няма да го изтрие. Може и така: text.Trim('a', 'b', 'c', ' ');Отрязва в началото и края всички тях. 	
+	По принцип всяка операция със стрингове създава нов стринг и ние трябва да го присвоим на някаква променлива. 
+Не е ефективно използването на "+" в цикъл, защото работи бавно. Затова се работи със StringBuilder();
+            StringBuilder result = new StringBuilder();
+            result.Append("a");
+            result.Append("a");					За да няма празни неща накрая!!!
+            result.Append("a");					Много важно при използване на StringBuilder() !!!
+            result.AppendLine("abcdefgh");
+            Console.WriteLine(result.ToString().Trim());      Накрая има Trim() за да няма празна линия. 
+Имаме reulst.Length;  indedxer -> result[100] дава 101-вия елемент. Имаме още result.Insert(3, "sdf")- преди 3-и вмъква
+Може също така: result[3] = 'a'; result.Remove(), result.Replace(), result.ToString().Trim(); 
+	Важно!!! В Char. има много методи за манипулиране и избор на символи при работа със стрингове и текст. Например:
+	    StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < str.Length; i++)
+            {					//IsUpper(); IsLower(); IsDigit(); IsLetter(); IsLetterOrDigit(); 
+                if (Char.IsUpper(str[i]))	//IsSeparator(); IsNumber(); IsSymbol(); MaxValue; MinValue; 
+                {				//ToLower(); ToUpper(); и други.
+                    sb.Append(str[i]);		проверката може да е и: if(str[i]>='A' && str[i] <='Z')
+                }							{
+            }								}
+            return sb.ToString().Trim();					{0} - за нещата в плейсхолдера
+Форматиране на стрингове: със ToString() String.Format()  number.ToString("C")  {index[,alignment][:formatString]}
+Форматиране при дати: Console.WriteLine("Now is {0:d.mm.yyyy hh:mm:ss}", now);  {0:yyyy.,! - d, mm} може и това например
+	или пък както е в България: {0:d.m.yyyy г.} А може и между тях да се слагат други символи. Печатат се. 
+За културите: Console.WriteLine(System.Threading.Thread.CurrentThread.CurrentCulture); - дава текущата култура. Също така можем да сетваме културата: горе пишем using System.Threading; и    using System.Globalization;  А после: 
+	Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("bg-BG"); и печата по български година
+            //за да работи в различните култури
+            DateTime parsed = DateTime.ParseExact("17.02.15", "dd.mm.yy", CultureInfo.InvariantCulture);
+            //даваме му стринга както го искаме, даваме му формата, който описва този начин и инвариантна култура. 
 
 
 
