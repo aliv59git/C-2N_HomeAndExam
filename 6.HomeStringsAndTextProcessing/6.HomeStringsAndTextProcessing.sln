@@ -5,6 +5,12 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.StringsInC", "01.StringsInC\01.StringsInC.csproj", "{676F8DE9-9E43-491B-BC13-D21A995E8673}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.ReverseString", "02.ReverseString\02.ReverseString.csproj", "{2A773BE1-1982-4E14-9686-AA683D22D142}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.CorrectBrackets", "03.CorrectBrackets\03.CorrectBrackets.csproj", "{F8F687CA-7A4C-4594-83D2-879094C0250E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.SubstringInText", "04.SubstringInText\04.SubstringInText.csproj", "{315A8D23-1936-4D21-A140-90E8A1C0C2C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,18 @@ Global
 		{676F8DE9-9E43-491B-BC13-D21A995E8673}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{676F8DE9-9E43-491B-BC13-D21A995E8673}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{676F8DE9-9E43-491B-BC13-D21A995E8673}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A773BE1-1982-4E14-9686-AA683D22D142}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A773BE1-1982-4E14-9686-AA683D22D142}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A773BE1-1982-4E14-9686-AA683D22D142}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A773BE1-1982-4E14-9686-AA683D22D142}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8F687CA-7A4C-4594-83D2-879094C0250E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8F687CA-7A4C-4594-83D2-879094C0250E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8F687CA-7A4C-4594-83D2-879094C0250E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8F687CA-7A4C-4594-83D2-879094C0250E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{315A8D23-1936-4D21-A140-90E8A1C0C2C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{315A8D23-1936-4D21-A140-90E8A1C0C2C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{315A8D23-1936-4D21-A140-90E8A1C0C2C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{315A8D23-1936-4D21-A140-90E8A1C0C2C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
