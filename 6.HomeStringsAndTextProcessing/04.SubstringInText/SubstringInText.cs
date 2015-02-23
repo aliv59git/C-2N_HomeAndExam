@@ -13,18 +13,16 @@ class SubstringInText
         int result = 0;
         str.ToLower();
         substr.ToLower();
-        int count = 0;
+        //int count = 0;
         for (int i = 0; i < str.Length; i++)
         {
             int index = str.IndexOf(substr, i);
             if (index != -1)
             {
                 result++;
+                i = index+1;
             }
         }
-
-
-
         return result;
     }
 
