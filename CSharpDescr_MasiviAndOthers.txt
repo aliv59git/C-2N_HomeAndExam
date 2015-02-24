@@ -267,9 +267,13 @@ Trim() - маха празни интервали, табулации и т.н. strNew = text.Trim(); TrimStart
 Форматиране на стрингове: със ToString() String.Format()  number.ToString("C")  {index[,alignment][:formatString]}
 Форматиране при дати: Console.WriteLine("Now is {0:d.mm.yyyy hh:mm:ss}", now);  {0:yyyy.,! - d, mm} може и това например
 	или пък както е в България: {0:d.m.yyyy г.} А може и между тях да се слагат други символи. Печатат се. 
-За културите: Console.WriteLine(System.Threading.Thread.CurrentThread.CurrentCulture); - дава текущата култура. Също така можем да сетваме културата: горе пишем using System.Threading; и    using System.Globalization;  А после: 
-	Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("bg-BG"); и печата по български година
-            //за да работи в различните култури
+За културите: Console.WriteLine(System.Threading.Thread.CurrentThread.CurrentCulture); - дава текущата култура. 
+	Също така можем да сетваме културата: горе пишем using System.Threading; и  using System.Globalization; А после: 
+   Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("bg-BG"); и печата по български година
+            //за да работи в различните култури  Changing current Culture
+	Thread.CurrentThread.CurrentCulture = new CultureInfo("en-CA");    
+Culture Sensitive ToString() 	CultureInfo culture = new CultureInfo("fr-CA");
+				string s = number.ToString("C", culture);  //42,00 $
             DateTime parsed = DateTime.ParseExact("17.02.15", "dd.mm.yy", CultureInfo.InvariantCulture);
             //даваме му стринга както го искаме, даваме му формата, който описва този начин и инвариантна култура. 
 
