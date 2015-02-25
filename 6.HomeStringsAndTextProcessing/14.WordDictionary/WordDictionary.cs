@@ -10,7 +10,7 @@ class WordDictionary
 //•	Write a program that enters a word and translates it by using the dictionary.
     static string TranslateWord(string word)
     {
-        string[] littleDiction = new string[]
+        string[] littleDiction = new string[] //or Console.ReadLine().Split(new char[]{'\n'}).Trim(',');
         {
             "Backup - This is an extra copy of a file or document",
             "Browser - This is the program you use to browse files. A web browser will browse internet files, like Firefox or Internet Explorer.",

@@ -7,19 +7,17 @@ using System.Threading.Tasks;
 class Palindromes
 {
     //•	Write a program that extracts from a given text all palindromes, e.g. ABBA, lamal, exe.
-
-    static void Main(string[] args)
+    static string isPalindrom(string text)
     {
-        Console.WriteLine("Please, enter a text:");
-        string[] text = Console.ReadLine().Split(' ', ',', '.', '!', '?', ':', ';', '-', '_');
-        Console.WriteLine("Palindromes are: ");
-        for (int i = 0; i < text.Length; i++)
+        StringBuilder sbPal = new StringBuilder();
+        string[] textW = text.Split(' ', ',', '.', '!', '?', ':', ';', '-', '_');
+        for (int i = 0; i < textW.Length; i++)
         {
             bool isPalindrom = false;
-            string word = text[i];
-            for (int j = 0; j < word.Length/2; j++)
+            string word = textW[i];
+            for (int j = 0; j < word.Length / 2; j++)
             {
-                if ((word[j] == word[word.Length - 1-j]))
+                if ((word[j] == word[word.Length - 1 - j]))
                 {
                     isPalindrom = true;
                 }
@@ -31,8 +29,18 @@ class Palindromes
             }
             if (isPalindrom)
             {
-                Console.WriteLine(word);
+                sbPal.Append(word+" ");
             }
         }
+        
+        return sbPal.ToString();
+    }
+
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Please, enter a text:");
+        string text = Console.ReadLine();
+        Console.WriteLine("Palindromes are: ");
+        Console.WriteLine(isPalindrom(text));
     }
 }
