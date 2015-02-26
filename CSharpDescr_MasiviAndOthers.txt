@@ -277,11 +277,39 @@ Culture Sensitive ToString() 	CultureInfo culture = new CultureInfo("fr-CA");
             DateTime parsed = DateTime.ParseExact("17.02.15", "dd.mm.yy", CultureInfo.InvariantCulture);
             //даваме му стринга както го искаме, даваме му формата, който описва този начин и инвариантна култура. 
 
+Exceptions Handling
 
-
-
-
-
+try
+{
+	int.Parse(str);
+	Console.WriteLine("You are entered valid number {0}", str);
+}
+catch (FormatException fe)
+{
+	Console.Error.WriteLine("Exception caught: " + fe);
+	Console.Error.WriteLine("\nException message: " + fe.message);
+	Console.Error.WriteLine("\nStack Trace: " + fe.StackTrace);
+}
+catch (OverflowException)
+{
+	Console.WriteLine("The number is too big to fit in Int32")
+}
+catch(FormatException ex)
+{
+	throw new Exception("Invalid!!!", ex);
+}
+Console>WriteLine("This code will be executed after try-catch") - показва, че грешката е прихваната и програмата продължава да се изпълнява и по-нататък. 
+	Един качествен метод или връща резултат/изпълнява някакво действие или хвърля Exception, когато нещо не е наред.
+С командата Console.WriteLine(GC.GetTotalMemory(false)); ни изкарва на конзолата колко памет е използвала горната операция. Правилото при обработка на Exceptions - винаги започване от най-базовия Exception. Ако сме опитали обратен ред, при компилацията получаваме подчертаване в кода след catch. Трябва да разменим местата на Exceptions. 
+	Хвърляне на Exceptions: throw new .....
+	if(value < 0)
+	{
+		throw new System.ArgumentOutOfRange("Sqrt from negative numbers is undefined!")
+	}	
+Имаме метода Console.Error.WriteLine("Error...."); - използва се за да видим какво ще ни изпише компилатора при грешка. Има също и такава команда:    Console.SetError(new StringWriter());	
+	След конструкцияка try catch ако има finaly {}  , то този код във finaly задължително се изпълнява, дори преди това в  catch да имаме return; 
+ако в chtch{} конструкцията поставим Envirinment.Exit(0); може да ни е начин за излизане от рекурсията. 
+	Важно!!! С хвърлянето на ексепшън: throw new ....ArgumentsOutOfRange("message") ние казваме как да гърми, т.е. как/какво съобщение да даде при exception.  Някъде в метод след if хвърляме exception: throw new FormatException("Format is not valid!"), и след това в Main се прихваща Exception-a с конструкцията try - catch. Също така От един Exception към друг и как накрая да ги има всичките: 
 
 
 
