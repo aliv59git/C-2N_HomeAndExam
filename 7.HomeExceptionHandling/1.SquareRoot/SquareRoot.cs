@@ -11,13 +11,22 @@ class SquareRoot
     //    o	In all cases finally print Good bye.
     //•	Use try-catch-finally block.
 
+    static double CalculateSquare(double numb)
+    {
+        if (numb < 0)
+        {
+            throw new ArgumentOutOfRangeException("Sqrt for negative numbers is not defined!");
+        }
+        return Math.Sqrt(numb);
+    }
+
     static void Main(string[] args)
     {
-        Console.WriteLine("Please, enter integer number: ");
+        Console.WriteLine("Please, enter a number: ");
         try
         {
-            int numb = int.Parse(Console.ReadLine());
-            Console.WriteLine((double)Math.Sqrt(numb));
+            double numb = double.Parse(Console.ReadLine());
+            Console.WriteLine(CalculateSquare(numb));
         }
         catch (ArgumentNullException)
         {
@@ -31,11 +40,12 @@ class SquareRoot
         }
         catch (ArgumentOutOfRangeException ae)
         {
-            Console.WriteLine("From negative numbers Math.Sqrt() is not defined: {0}", ae.Message);
+            Console.WriteLine("For negative numbers Math.Sqrt() is not defined: {0}", ae.Message);
         }
         catch (Exception ex)
         {
             Console.WriteLine(ex.Message);
+            throw;
         }
         finally
         {

@@ -1,3 +1,7 @@
+Важни въвеждания при if:  някои са в Regex.doc File.ReadAllText(@“..\..\finish.txt”
+
+	Char.IsWhiteSpace; isNullOrEmptyString
+
 
 
 Важни команди и изрази при МАСИВИ лекцията:
@@ -309,7 +313,19 @@ Console>WriteLine("This code will be executed after try-catch") - показва, че гр
 Имаме метода Console.Error.WriteLine("Error...."); - използва се за да видим какво ще ни изпише компилатора при грешка. Има също и такава команда:    Console.SetError(new StringWriter());	
 	След конструкцияка try catch ако има finaly {}  , то този код във finaly задължително се изпълнява, дори преди това в  catch да имаме return; 
 ако в chtch{} конструкцията поставим Envirinment.Exit(0); може да ни е начин за излизане от рекурсията. 
-	Важно!!! С хвърлянето на ексепшън: throw new ....ArgumentsOutOfRange("message") ние казваме как да гърми, т.е. как/какво съобщение да даде при exception.  Някъде в метод след if хвърляме exception: throw new FormatException("Format is not valid!"), и след това в Main се прихваща Exception-a с конструкцията try - catch. Също така От един Exception към друг и как накрая да ги има всичките: 
+	Важно!!! С хвърлянето на ексепшън: throw new ....ArgumentsOutOfRange("message") ние казваме как да гърми, т.е. как/какво съобщение да даде при exception.  Някъде в метод след if хвърляме exception: throw new FormatException("Format is not valid!"), и след това в Main се прихваща Exception-a с конструкцията try - catch. Също така От един Exception към друг и как накрая да ги има всичките: try{...} catch (Exception ex)
+		{
+			Console.WriteLine(ex.Message); - Ще изпринти съобщението след throw..., което е горе в метода. 
+		}
+За да пази предишните Exceptions подаваме друг Exception с променлива ex примерно, и в нея то пази и предишни Exception. Това е като хвърли ново throw new IndexOutOfRangeException("Sorry!", ex) отден Message в него да има и "ex", т.е. променлива. Това е когато искаме да се визуализира и вътрешен ексепшън. 
+	Друго ако имаме хвърлен някакъв Exception ние можем да го хвърлим в catch конструкцията отново:
+try{..} catch (FormatException fe)
+	{
+		Console.WriteLine("Parse failed!")
+		throw fe;//Re-throw the caught exception
+	}		 друг начин е нов catch само с throw;//Re-throw the last caught exception)
+
+
 
 
 
