@@ -9,11 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.EnterNumber", "2.EnterNum
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.ReadFileContents", "3.ReadFileContents\3.ReadFileContents.csproj", "{8DF04EF9-8D36-4624-B495-EA64CA12D39F}"
 EndProject
-<<<<<<< HEAD
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.DownloadFile", "4.DownloadFile\4.DownloadFile.csproj", "{7C466739-2828-4CF1-B9CF-ADC0F9DAAE27}"
-=======
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.DownloadFile", "4.DownloadFile\4.DownloadFile.csproj", "{587580E7-018D-4D16-B96C-18ACFF405FB2}"
->>>>>>> 285677908fdcf757c66ecd268250847de620a24a
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,17 +29,10 @@ Global
 		{8DF04EF9-8D36-4624-B495-EA64CA12D39F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8DF04EF9-8D36-4624-B495-EA64CA12D39F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8DF04EF9-8D36-4624-B495-EA64CA12D39F}.Release|Any CPU.Build.0 = Release|Any CPU
-<<<<<<< HEAD
 		{7C466739-2828-4CF1-B9CF-ADC0F9DAAE27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7C466739-2828-4CF1-B9CF-ADC0F9DAAE27}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7C466739-2828-4CF1-B9CF-ADC0F9DAAE27}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7C466739-2828-4CF1-B9CF-ADC0F9DAAE27}.Release|Any CPU.Build.0 = Release|Any CPU
-=======
-		{587580E7-018D-4D16-B96C-18ACFF405FB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{587580E7-018D-4D16-B96C-18ACFF405FB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{587580E7-018D-4D16-B96C-18ACFF405FB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{587580E7-018D-4D16-B96C-18ACFF405FB2}.Release|Any CPU.Build.0 = Release|Any CPU
->>>>>>> 285677908fdcf757c66ecd268250847de620a24a
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
