@@ -39,6 +39,16 @@ class ConcatenateTextFiles
         }
         strReader1.Close();
         strReader.Close();
+        StreamReader strReader2 = new StreamReader(@"..\..\test.txt");
+        using (strReader2)
+        {
+            string currentLine = strReader2.ReadLine();
+            while (currentLine != null)
+            {
+                Console.WriteLine(currentLine);
+                currentLine = strReader2.ReadLine();
+            }
+        }
     }
 }
 
