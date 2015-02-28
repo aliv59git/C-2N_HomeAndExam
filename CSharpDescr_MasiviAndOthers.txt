@@ -325,6 +325,24 @@ try{..} catch (FormatException fe)
 		throw fe;//Re-throw the caught exception
 	}		 друг начин е нов catch само с throw;//Re-throw the last caught exception)
 
+Текстови файлове
+
+StreamReader strReader = new StreamReader("test.txt"); Методи: ReadLine(); ReadToEnd(); Close();
+	using(strReader)   //или  using (stringWriter) В този скоуп се затварят потоците за четене и писане. 
+{
+}
+Може и така: 	string fileContents = strReader.ReadToEnd();	Ако искаме енкодинг след името на файла поставяме енкодинга:
+		Console.WriteLine(fileContents);            StreamReader streamReader = new StreamReader(cyr.txt, Encoding.UTF-8);
+		strReader.Close();
+Аналогично е за StreamWriter: streamWriter writer = new StreamWriter(writeFile.txt); също работи конструкцията using (writer){}
+горе трябва да е въведено: using System.IO; Encoding:   StreamWriter writer = new StreamWriter(test.txt, false, Encoding.UTF8);
+Отново имаме: Write(); WriteLne(); Flish(); 
+
+
+
+
+
+
 
 
 
