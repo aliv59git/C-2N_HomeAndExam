@@ -14,12 +14,45 @@ class ReadFileContents
 
     static void Main(string[] args)
     {
-        string path = @"F:\VS\C#2N\C-2N_HomeAndExam\LICENSE";
-        string readText = File.ReadAllText(path);
-        string path1 = "..\\..\\LICENSE";  //file was copy in directory containing ReadFileContents.cs
-        string readText1 = File.ReadAllText(path1);
+        string readText = string.Empty;
+        string readText1 = string.Empty;
+        try
+        {
+            string path = @"F:\VS\C#2N\C-2N_HomeAndExam\LICENSE";
+            readText = File.ReadAllText(path);
+        }
+        catch (DirectoryNotFoundException)
+        {
+            Console.WriteLine("Invalid Directory. Entered Path is invalid.");
+            Console.WriteLine();
+        }
+        catch (FileNotFoundException fnf)
+        {
+            Console.WriteLine("Error: " + fnf.Message);
+        }
+        catch (ArgumentNullException)
+        {
+            throw;
+        }
+        catch (ArgumentException ae)
+        {
+            Console.WriteLine(ae.Message);
+            throw;
+        }
+        catch (System.Security.SecurityException se)
+        {
+            Console.WriteLine("The file is security entries." + se.Message);
+        }
+        catch (Exception)
+        {
+            throw;
+        }
+        finally
+        {
+            string path1 = @"..\..\LICENSE";  //file was copy in directory containing ReadFileContents.cs
+            readText1 = File.ReadAllText(path1);
+            Console.WriteLine(readText1);
+        }
         Console.WriteLine(readText);
-        Console.WriteLine();
-        Console.WriteLine(readText1);
     }
 }
