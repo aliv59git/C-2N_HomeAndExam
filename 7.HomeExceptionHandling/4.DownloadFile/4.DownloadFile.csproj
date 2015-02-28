@@ -4,7 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+<<<<<<< HEAD
     <ProjectGuid>{7C466739-2828-4CF1-B9CF-ADC0F9DAAE27}</ProjectGuid>
+=======
+    <ProjectGuid>{587580E7-018D-4D16-B96C-18ACFF405FB2}</ProjectGuid>
+>>>>>>> 285677908fdcf757c66ecd268250847de620a24a
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>_4.DownloadFile</RootNamespace>
