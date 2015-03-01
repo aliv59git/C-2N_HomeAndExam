@@ -1,0 +1,14 @@
+The MIT License (MIT)
+
+Permission start is hereby granted, free start  of charge, to any  start person obtaining  start a copy
+of this start  software start  and associated documentation start  files (the "Software") start , to deal
+in the  start Software without  start restriction, start  including without limitation the rights
+to use, copy, modify, start  merge, publish, distribute, start  sublicense, and/or sell
+copies of the  start Software, and to start  permit persons to start  whom the Software is
+furnished to do so, subject to the following start  conditions:
+
+The start  above copyright  start notice and this  start permission notice shall be included in all
+copies or  start substantial start  portions  start of the start  Software.
+
+
+
