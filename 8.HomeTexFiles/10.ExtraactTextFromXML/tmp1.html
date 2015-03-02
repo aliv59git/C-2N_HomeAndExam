@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+
+<html dir="ltr" xmlns="http://www.w3.org/1999/xhtml" lang="bg">
+    <head><link rel="canonical" href="https://msdn.microsoft.com/en-us/library/618ayhy6.aspx" />
+        <title>C# Reference</title>
+
+
+
+
+
+<meta name="DCS.dcsuri" content="/en-us/library/618ayhy6(d=default,l=en-us,v=vs.120).aspx" />
+
+<meta name="NormalizedUrl" content="https://msdn.microsoft.com/en-us/library/618ayhy6(d=default,l=en-us,v=vs.120).aspx" />
+
+<meta name="ms.normalizedurl" content="https://msdn.microsoft.com/en-us/library/618ayhy6(d=default,l=en-us,v=vs.120).aspx" />
+
+<meta name="DCSext.ProductFamily" content="LIB_DG" />
+
+<meta name="DCSext.Product" content="VS_Lang_CS" />
+
+<meta name="DCSext.Title" content="C# Reference" />
+
+<meta name="VotingContextUrl" content="https://msdn.microsoft.com/en-us/library/618ayhy6(d=default,l=en-us,v=vs.120).aspx" />
+
+<meta name="MN" content="EE4293C0-4:37:12 AM" />
+
+<meta name="Search.ShortId" content="618ayhy6" />
+
+<meta name="ms.shortidmsdn" content="618ayhy6" />
+
+<meta name="Ms.Locale" content="en-us" />
+
+<meta name="ms.prodver" content="VS.120" />
+
+<meta name="ms.contentlang" content="EN" />
+
+<meta name="ms.lang" content="BG" />
+
+<meta name="ms.loc" content="BG" />
+
+<meta name="ms.sitever" content="2015.02.18.4" />
+
+<meta name="ms.assetid" content="06de3167-c16c-4e1a-b3c5-c27841d4569a" />
+
+<meta name="ms.auth" content="0" />
+
+
+
+
+
+
+
+
+        
+    <link rel="stylesheet" type="text/css" href="https://i-msdn.sec.s-msft.com/Combined.css?resources=0:Topic,0:CodeSnippet,0:ProgrammingSelector,0:ExpandableCollapsibleArea,1:CommunityContent,0:TopicNotInScope,0:FeedViewerBasic,0:ImageSprite,2:Header,2:HeaderFooterSprite,3:Banner,4:LinkList,5:PrintExportButton,1:Toc,1:NavigationResize,0:ContentFallback,0:VersionSelector,1:LibraryMemberFilter,2:Footer,4:FooterSock,4:Base,6:Msdn;/Areas/Epx/Content/Css:0,/Areas/Library/Content:1,/Areas/Centers/Themes/StandardDevCenter/Content:2,/Areas/Epx/Shared/Content:3,/Areas/Epx/Themes/Base/Content:4,/Areas/Library/Themes/Base/Content:5,/Areas/Library/Themes/Msdn/Content:6&amp;amp;v=A142C09321100927FA04587BCB2B1C0C" /></head>
+    <body class="library ">
+        <div id="page">
+            
+
+            
+            
+            
+    
+
+    
+    <link type="text/css" rel="stylesheet" />
+    
+    <input type="hidden" id="isHeaderBleeding" value="true" />
+    <div id="ux-header" dir="ltr" class="ltr msdn">
+        
+    
+    <div id="ux-banner">
+        <div class="banner">
+            <div class="row">
+                <div class="left">Съгласен съм този сайт да използва „бисквитките” за анализ, персонализирано съдържание и реклама.</div>
+                <div class="middle"><a tabindex="1" href="https://www.microsoft.com/privacystatement/bg-bg/core/default.aspx">Научете повече</a></div>
+                <div class="right"><a tabindex="1" title="Изход"></a></div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+        <header>
+            <span id="moveDrawer"></span>
+            <span id="singleCol"></span>
+            <span id="doubleCol"></span>
+
+            <div class="row">
+                <div class="top">
+                    <div class="left">
+                        
+                            <a class="msdnLogoImg" href="https://msdn.microsoft.com/bg-bg">
+                                <img src="https://i-msdn.sec.s-msft.com/Areas/Centers/Themes/StandardDevCenter/Content/Images/microsoftLogoForHeader.png?v=635598778834479518" />
+                            </a>
+                    </div>
+
+                    <div class="right">
+                        <div id="signIn">
+
+<a class="scarabLink" href="https://login.live.com/login.srf?wa=wsignin1.0&amp;rpsnv=12&amp;ct=1425127032&amp;rver=6.0.5276.0&amp;wp=MCMBI&amp;wlcxt=MSDN%24MSDN%24MSDN&amp;wreply=https%3a%2f%2fmsdn.microsoft.com%2fbg-bg%2flibrary%2f618ayhy6.aspx&amp;lc=1026&amp;id=254354&amp;mkt=bg-BG" title="Влизане">Влизане</a></div>
+
+    
+
+                        <div class="auxNav">
+                            <div data-fragmentName="Subscriptions" id="Fragment_Subscriptions" xmlns="http://www.w3.org/1999/xhtml">
+  <a href="https://msdn.microsoft.com/subscriptions/manage/hh442900" id="Subscriptions_2153_1" xmlns="http://www.w3.org/1999/xhtml">Абонаменти за MSDN</a>
+</div>
+                            <div data-fragmentName="GetTools" id="Fragment_GetTools" xmlns="http://www.w3.org/1999/xhtml">
+  <a href="http://go.microsoft.com/fwlink/?LinkId=309297&amp;clcid=0x402&amp;slcid=0x402&amp;campaign=o~msft~msdn~gettools-header~dn308572" id="GetTools_2153_3" xmlns="http://www.w3.org/1999/xhtml">Изтегляне на инструменти</a>
+</div>
+                            <div data-fragmentName="SocialLinks" id="Fragment_SocialLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <ul class="links horizontal">
+      <li>
+        <a href="http://www.facebook.com/microsoftdeveloper" target="_blank" id="SocialLinks_2152_4" class="facebook" xmlns="http://www.w3.org/1999/xhtml">http://www.facebook.com/microsoftdeveloper</a>
+      </li>
+      <li>
+        <a href="https://twitter.com/msdev" target="_blank" id="SocialLinks_2152_5" class="twitter" xmlns="http://www.w3.org/1999/xhtml">https://twitter.com/msdev</a>
+      </li>
+      <li>
+        <a href="http://plus.google.com/111221966647232053570/" target="_blank" id="SocialLinks_2152_6" class="googlePlus" xmlns="http://www.w3.org/1999/xhtml">http://plus.google.com/111221966647232053570/</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bottom">
+                    <div class="left">
+                        <div data-fragmentName="SiteLogo" id="Fragment_SiteLogo" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="LinkWithImage topImage">
+    <a id="SiteLogo_2152_1" href="https://msdn.microsoft.com/">
+      <img id="msdnLogo-black" src="https://i-msdn.sec.s-msft.com/bg-bg/msdn/ux/library/dn610975.msdnLogo-black.jpg?Segments=%2flibrary&amp;isLibrary=true&amp;isMtpsRequest=true&amp;HideProfileLink=true" xmlns="" />
+      <span></span>
+    </a>
+  </div>
+</div>
+                        <div id="drawer">
+                            <div class="toc">
+                                
+        <nav>
+            <ul class="navL1">
+                        <li class="inactive toggle">
+                            <a href="javascript:void(0)" title="Технологии">Технологии</a>
+                                <ul class="navL2">
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/cloud-app-development-msdn" title="Cloud">Cloud</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/mobile-app-development-msdn" title="Mobile">Mobile</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/web-app-development-msdn" title="Web">Web</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/business-and-productivity-app-development-msdn" title="Business">Business</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/big-data-development-msdn" title="Data">Data</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/games-development-msdn" title="Gaming">Gaming</a>
+
+                                                   
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive toggle">
+                            <a href="javascript:void(0)" title="Изтегляния">Изтегляния</a>
+                                <ul class="navL2">
+                                        <li class="inactive">
+                                            <a href="http://www.visualstudio.com/downloads/download-visual-studio-vs" title="Visual Studio">Visual Studio</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/subscriptions" title="MSDN subscriptions">MSDN subscriptions</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/microsoft-sdks-msdn" title="SDKs">SDKs</a>
+
+                                                   
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive toggle">
+                            <a href="javascript:void(0)" title="Програми">Програми</a>
+                                <ul class="navL2">
+                                        <li class="inactive">
+                                            <a href="https://www.microsoft.com/bizspark" title="BizSpark">BizSpark</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive toggle">
+                                            <a href="javascript:void(0)" title="Students">Students</a>
+
+                                                <ul class="navL3">
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/student-developer-program" title="Develop apps">Develop apps</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="http://blogs.msdn.com/b/microsoft_student_developer_blog" title="Blog">Blog</a>
+                                                        </li>
+                                                </ul>
+                                                   
+                                        </li>
+                                        <li class="inactive toggle">
+                                            <a href="javascript:void(0)" title="Architects">Architects</a>
+
+                                                <ul class="navL3">
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/architects-overview-msdn" title="Overview">Overview</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/architects-case-studies-msdn" title="Case studies">Case studies</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="https://msdn.microsoft.com/architects-blueprints-msdn" title="Blueprints">Blueprints</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="http://blogs.msdn.com/b/msarchitecture/" title="Blog">Blog</a>
+                                                        </li>
+                                                        <li class="inactive">
+                                                            <a href="http://social.msdn.microsoft.com/forums/en-us/home?brandignore=true&amp;sort=relevancedesc&amp;searchterm=architecture+or+architect" title="Forums">Forums</a>
+                                                        </li>
+                                                </ul>
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="http://events.msdn.microsoft.com/" title="Events">Events</a>
+
+                                                   
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive toggle">
+                            <a href="javascript:void(0)" title="Общност">Общност</a>
+                                <ul class="navL2">
+                                        <li class="inactive">
+                                            <a href="https://social.msdn.microsoft.com/forums/" title="Forums">Forums</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="http://blogs.msdn.com/b/developer-tools/" title="Blogs">Blogs</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="http://tech-advisors.msdn.microsoft.com/en-us" title="Tech Advisors">Tech Advisors</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="http://channel9.msdn.com/" title="Channel 9">Channel 9</a>
+
+                                                   
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive current toggle">
+                            <a href="javascript:void(0)" title="Документация">Документация</a>
+                                <ul class="navL2">
+                                        <li class="inactive current">
+                                            <a href="https://msdn.microsoft.com/library" title="APIs and reference">APIs and reference</a>
+
+                                                   
+                                        </li>
+                                        <li class="inactive">
+                                            <a href="https://msdn.microsoft.com/developer-centers-msdn" title="Dev centers">Dev centers</a>
+
+                                                   
+                                        </li>
+                                </ul>
+                        </li>
+                        <li class="inactive">
+                            <a href="https://code.msdn.microsoft.com/" title="Примери">Примери</a>
+                        </li>
+            </ul>
+        </nav>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <div data-fragmentName="SearchBox" id="Fragment_SearchBox" xmlns="http://www.w3.org/1999/xhtml">
+  <div class="SearchBox">
+    <form id="HeaderSearchForm" name="HeaderSearchForm" method="get" onsubmit="return Epx.Controls.SearchBox.searchBoxOnSubmit(this);">
+      <input id="HeaderSearchTextBox" name="query" type="text" maxlength="200" onfocus="Epx.Controls.SearchBox.watermarkFocus(event, this.title)" onblur="Epx.Controls.SearchBox.watermarkBlur(event, this.title)" />
+      <button id="HeaderSearchButton" value="" type="submit" class="header-search-button"></button>
+    </form>
+    
+    
+  </div>
+</div>
+                        <a id="grip" href="javascript:void(0)"></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+    
+    
+
+        
+    <div class="printExportMenus ltr">
+        <a id="isd_printABook" href="/bg-bg/library/export/help/?returnUrl=%2fbg-bg%2flibrary%2f618ayhy6.aspx">
+            Експортиране (<span class="count">0</span>)
+        </a>
+        <a id="isd_print" href="https://msdn.microsoft.com/bg-bg/library/618ayhy6(d=printer).aspx" rel="nofollow">
+            Отпечатване 
+        </a>
+    </div>
+    
+
+        <div class="printExportMenus ltr">
+        <a id="expandCollapseAll" accesskey="e" href="javascript:void(0)" title="Expand/Collapse all sections by pressing Ctrl + Shift + e">Разширяване на всички</a>
+    </div>
+
+    
+
+
+            <div id="body">
+                
+
+
+
+
+
+
+
+
+    <div id="leftNav">
+
+
+
+<div id="tocnav">
+
+            <div class="toclevel0" data-toclevel="0">
+<a data-tochassubtree="true" href="https://msdn.microsoft.com/en-us/library/ms123401.aspx" id="ms310241_MSDN.10_en-us" mtpsaliasid="" mtpsassetid="5DDC0A78-6B2C-43E3-9C56-55F45C0DFFA5_MSDN.10_en-us" mtpsshortid="ms123401_MSDN.10_en-us" title="MSDN Library">MSDN Library</a>            </div>
+            <div class="toclevel0" data-toclevel="0">
+<a data-tochassubtree="true" href="https://msdn.microsoft.com/en-us/library/aa187916.aspx" id="aa187916_MSDN.10_en-us" mtpsaliasid="" mtpsassetid="MSDN|devtoolslang|$\devtoolslang.hxt@0,0_MSDN.10_en-us" mtpsshortid="aa187916_MSDN.10_en-us" title="Development Tools and Languages">Development Tools and Languages</a>            </div>
+            <div class="toclevel0" data-toclevel="0">
+<a data-tochassubtree="true" href="https://msdn.microsoft.com/en-us/library/dd831853.aspx" id="aa187919_MSDN.10_en-us" mtpsaliasid="" mtpsassetid="ba237712-f8c4-4d13-854b-ab4a16afa309_MSDN.10_en-us" mtpsshortid="dd831853_VS.120_en-us" title="Visual Studio 2013">Visual Studio 2013</a>            </div>
+            <div class="toclevel0" data-toclevel="0">
+<a data-tochassubtree="true" href="https://msdn.microsoft.com/en-us/library/hh334523.aspx" id="hh793772_VS.120_en-us" mtpsaliasid="" mtpsassetid="fa9bf5e6-07c8-4b5b-b1ae-8a22816a63c6_VS.120_en-us" mtpsshortid="hh334523_VS.120_en-us" title="Visual Basic and Visual C#">Visual Basic and Visual C#</a>            </div>
+            <div class="toclevel0" data-toclevel="0">
+<a data-tochassubtree="true" href="https://msdn.microsoft.com/en-us/library/kx37x362.aspx" id="hh599417_VS.120_en-us" mtpsaliasid="" mtpsassetid="7f4f8103-7068-4f1d-92c7-3c4519b6edbc_VS.120_en-us" mtpsshortid="kx37x362_VS.120_en-us" title="Visual C#">Visual C#</a>            </div>
+            <div class="toclevel1 current" data-toclevel="1">
+<a data-tochassubtree="true" href="https://msdn.microsoft.com/en-us/library/618ayhy6.aspx" id="hh582965_VS.120_en-us" mtpsaliasid="" mtpsassetid="06de3167-c16c-4e1a-b3c5-c27841d4569a_VS.120_en-us" mtpsshortid="618ayhy6_VS.120_en-us" title="C# Reference">C# Reference</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a data-tochassubtree="true" href="https://msdn.microsoft.com/en-us/library/x53a06bb.aspx" id="hh582946_VS.120_en-us" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="C# Keywords">C# Keywords</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a data-tochassubtree="true" href="https://msdn.microsoft.com/en-us/library/6a71f45d.aspx" id="hh599447_VS.120_en-us" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="C# Operators">C# Operators</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a data-tochassubtree="true" href="https://msdn.microsoft.com/en-us/library/ed8yd1ha.aspx" id="hh599450_VS.120_en-us" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="C# Preprocessor Directives">C# Preprocessor Directives</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a data-tochassubtree="true" href="https://msdn.microsoft.com/en-us/library/2fdbz5xd.aspx" id="hh582911_VS.120_en-us" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="C# Compiler Options">C# Compiler Options</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a data-tochassubtree="true" href="https://msdn.microsoft.com/en-us/library/ms228296.aspx" id="hh582915_VS.120_en-us" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="C# Compiler Errors">C# Compiler Errors</a>            </div>
+            <div class="toclevel2" data-toclevel="2">
+<a href="https://msdn.microsoft.com/en-us/library/ms228593.aspx" mtpsaliasid="" mtpsassetid="" mtpsshortid="" title="C# Language Specification">C# Language Specification</a>            </div>
+</div>
+        
+
+        
+
+        
+        
+        <div id="toc-resizable-ew" class="toc-resizable-ew"></div>
+        
+
+<a id="NavigationResize" href="javascript:void(0)">
+    <img class="cl_nav_resize_open" src="https://i-msdn.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635598778885886417" title="Expand" alt="Expand" />
+    <img class="cl_nav_resize_close" src="https://i-msdn.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635598778885886417" title="Minimize" alt="Minimize" />
+</a>
+
+
+
+    </div>
+<div id="content" class="content">
+
+
+
+
+<div id="ContentFallback" class="ContentFallback">
+    <div class="ContentFallbackHead">EN</div>
+    <div class="ContentFallbackText">Това съдържание не е налично на вашия език. На разположение е английската версия.</div>
+</div>
+
+
+
+
+
+        
+<div xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="topic" xmlns="http://www.w3.org/1999/xhtml" xmlns:mtps="http://msdn2.microsoft.com/mtps" xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:cs="http://msdn.microsoft.com/en-us/">
+    <h1 class="title">C# Reference</h1>
+    
+    <div class="lw_vs">
+      <div id="curversion">
+        <strong>
+            Visual Studio 2013 
+        </strong>
+      </div>
+      <div id="versionclick">
+        <div id="vsseperator" class="cl_lw_vs_seperator"></div>
+        <div>
+          <div>
+            <a id="vsLink" href="javascript:;">
+                        Други версии
+                    </a>
+          </div>
+          <div class="cl_vs_arrow clip10x10">
+            <img class="cl_lw_vs_arrow" id="vsArrow" alt="" src="https://i-msdn.sec.s-msft.com/Areas/Epx/Content/Images/ImageSprite.png?v=635598778885886417" />
+          </div>
+        </div>
+        <ul id="vsPanel">
+          <li>
+            <a href="/bg-bg/library/618ayhy6(v=vs.110).aspx">Visual Studio 2012</a>
+          </li>
+          <li>
+            <a href="/bg-bg/library/618ayhy6(v=vs.100).aspx">Visual Studio 2010</a>
+          </li>
+          <li>
+            <a href="/bg-bg/library/618ayhy6(v=vs.90).aspx">Visual Studio 2008</a>
+          </li>
+          <li>
+            <a href="/bg-bg/library/618ayhy6(v=vs.80).aspx">Visual Studio 2005</a>
+          </li>
+          <li>
+            <a href="/bg-bg/library/618ayhy6(v=vs.71).aspx">Visual Studio .NET 2003</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    
+    <div id="mainSection">
+      <div id="mainBody">
+        <div class="introduction">
+          <p>This section provides reference material about C# keywords, operators, compiler errors, and warnings.</p>
+        </div>
+        <div>
+          
+          <h2 class="LW_CollapsibleArea_TitleDiv">
+            <div>
+              <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свиване" role="button">
+                <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+                <span class="LW_CollapsibleArea_Title">In This Section</span>
+              </a>
+              <div class="LW_CollapsibleArea_HrDiv">
+                <hr class="LW_CollapsibleArea_Hr" />
+              </div>
+            </div>
+          </h2>
+          <div class="sectionblock">
+            <a id="inThisSectionToggle">
+              
+            </a>
+            <dl class="authored">
+              <dt>
+                <span>
+                  <span>
+                    <a href="https://msdn.microsoft.com/bg-bg/library/x53a06bb.aspx">C# Keywords</a>
+                  </span>
+                </span>
+              </dt>
+              <dd>
+                <p>Provides links to information about C# keywords and syntax.</p>
+              </dd>
+              <dt>
+                <span>
+                  <span>
+                    <a href="https://msdn.microsoft.com/bg-bg/library/6a71f45d.aspx">C# Operators</a>
+                  </span>
+                </span>
+              </dt>
+              <dd>
+                <p>Provides links to information about C# operators and syntax.</p>
+              </dd>
+              <dt>
+                <span>
+                  <span>
+                    <a href="https://msdn.microsoft.com/bg-bg/library/ed8yd1ha.aspx">C# Preprocessor Directives</a>
+                  </span>
+                </span>
+              </dt>
+              <dd>
+                <p>Provides links to information about compiler commands for embedding in C# source code.</p>
+              </dd>
+              <dt>
+                <span>
+                  <span>
+                    <a href="https://msdn.microsoft.com/bg-bg/library/2fdbz5xd.aspx">C# Compiler Options</a>
+                  </span>
+                </span>
+              </dt>
+              <dd>
+                <p>Includes information about compiler options and how to use them.</p>
+              </dd>
+              <dt>
+                <span>
+                  <span>
+                    <a href="https://msdn.microsoft.com/bg-bg/library/ms228296.aspx">C# Compiler Errors</a>
+                  </span>
+                </span>
+              </dt>
+              <dd>
+                <p>Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.</p>
+              </dd>
+              <dt>
+                <span>
+                  <span>
+                    <a href="https://msdn.microsoft.com/bg-bg/library/ms228593.aspx">C# Language Specification</a>
+                  </span>
+                </span>
+              </dt>
+              <dd>
+                <p>Provides pointers to the latest version of the C# Language Specification in Microsoft Word format.</p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+        <div>
+          <h2 class="LW_CollapsibleArea_TitleDiv">
+            <div>
+              <a href="javascript:void(0)" class="LW_CollapsibleArea_TitleAhref" title="Свиване" role="button">
+                <span class="cl_CollapsibleArea_expanding LW_CollapsibleArea_Img"></span>
+                <span class="LW_CollapsibleArea_Title">Related Sections</span>
+              </a>
+              <div class="LW_CollapsibleArea_HrDiv">
+                <hr class="LW_CollapsibleArea_Hr" />
+              </div>
+            </div>
+          </h2>
+          <div class="sectionblock">
+            <a id="relatedSectionsToggle">
+              
+            </a>
+            <dl class="authored">
+              <dt>
+                <span>
+                  <a href="http://go.microsoft.com/fwlink/?LinkId=70367" target="_blank">C# FAQ</a>
+                </span>
+              </dt>
+              <dd>
+                <p>Provides a growing list of C# Frequently Asked Questions in the C# Developer Center.</p>
+              </dd>
+              <dt>
+                <span>
+                  <a href="http://go.microsoft.com/fwlink/?LinkId=70368" target="_blank">C# KB articles in the Microsoft Knowledge Base</a>
+                </span>
+              </dt>
+              <dd>
+                <p>Opens a Microsoft search page for Knowledge Base articles that are available on MSDN.</p>
+              </dd>
+              <dt>
+                <span>
+                  <span>
+                    <a href="https://msdn.microsoft.com/bg-bg/library/kx37x362.aspx">Visual C#</a>
+                  </span>
+                </span>
+              </dt>
+              <dd>
+                <p>Provides a portal to Visual C# documentation.</p>
+              </dd>
+              <dt>
+                <span>
+                  <span>
+                    <a href="https://msdn.microsoft.com/bg-bg/library/z9hsy596.aspx">C# Sample Applications</a>
+                  </span>
+                </span>
+              </dt>
+              <dd>
+                <p>Provides a list of Visual C# samples and instructions about how to locate them on the local disk.</p>
+              </dd>
+              <dt>
+                <span>
+                  <span>
+                    <a href="https://msdn.microsoft.com/bg-bg/library/ms173063.aspx">Using the Visual C# Development Environment</a>
+                  </span>
+                </span>
+              </dt>
+              <dd>
+                <p>Provides links to conceptual and task topics that describe the IDE and Editor.</p>
+              </dd>
+              <dt>
+                <span>
+                  <span>
+                    <a href="https://msdn.microsoft.com/bg-bg/library/67ef8sbd.aspx">C# Programming Guide</a>
+                  </span>
+                </span>
+              </dt>
+              <dd>
+                <p>Includes information about how to use the C# programming language.</p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+
+
+
+
+<div class="libraryMemberFilter">
+    <div class="filterContainer">
+        <span>Покажи:</span>
+        <label>
+            <input type="checkbox" class="libraryFilterInherited" checked="checked" value="Inherit" />Наследен
+        </label>
+        <label>
+            <input type="checkbox" class="libraryFilterProtected" checked="checked" value="Protected" />Защитен
+        </label>
+    </div>
+</div>
+    
+<input type="hidden" id="libraryMemberFilterEmptyWarning" value="Няма налични членове с вашите текущи настройки на филтъра." />
+
+
+ 
+</div>
+
+
+            </div>
+            <div class="clear"></div>
+
+            
+    
+<input name="__RequestVerificationToken" type="hidden" value="Au9kdyqmLwX3Eq7z_x9xfCeD6CsByx2l_XwSVYhTQopLtLN_RjzwoR-n_dRUT4TgbYDus7n137Cfo5NIOyiagBKnmBg1" />
+<input id="ratingSubmitUrl" type="hidden" value="https://msdn.microsoft.com/bg-bg/library/feedback/add/618ayhy6.aspx" />
+<input id="isTopicRated" type="hidden" value="false" />
+
+
+
+
+    
+
+    
+    <link type="text/css" rel="stylesheet" />
+    
+    <div id="ux-footer" class="" style="" dir="ltr">
+            
+            <div id="footerSock" class="librarySock">
+                <div id="footerSockInner">
+                        <a name="feedback"></a>
+
+<div class="rating">
+    <div id="ratingSection1">
+        <div class="title">
+            Тази страница беше ли полезна?
+        </div>
+        <div class="description">
+            Вашата обратна връзка за това съдържание е важна.<br />Споделете мнението си.
+        </div>
+        <div class="buttons">
+            <button class="button" id="ratingYes">Да</button>
+            <button class="button" id="ratingNo">Не</button>
+        </div>
+        <input id="ratingValue" type="hidden" value="" />
+    </div>
+    <div id="ratingSection2">
+        <div class="title">
+            Допълнителна обратна връзка?
+        </div>
+        <textarea id="ratingText" rows="6" cols="" maxlength="1500"></textarea>
+        <div class="counter right">
+            <span id="feedbackTextCounter">1500</span> знака остават
+        </div>
+        <div class="buttons left">
+            <button class="button" id="ratingSubmit">Подаване</button>
+            <button class="button" id="ratingSkipThis">Пропуснете това</button>
+        </div>
+    </div>
+    <div id="ratingSection3">
+        <div class="title">
+            Благодарим ви!
+        </div>
+        <div class="description">
+            Ценим обратната ви връзка.
+        </div>
+    </div>
+    
+    
+    <div id="contentFeedbackQAContainer" style="display: none;"></div>
+</div>
+    
+                                        <div class="clear"></div>
+                </div>
+            </div>
+
+        <footer class="top">
+            <div data-fragmentName="LeftLinks" id="Fragment_LeftLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <div class="linkListTitle">Центрове за разработчици</div>
+    <ul class="links">
+      <li>
+        <a href="https://dev.windows.com" id="LeftLinks_2148_1" class="windowsBlue" xmlns="http://www.w3.org/1999/xhtml">Windows</a>
+      </li>
+      <li>
+        <a href="http://dev.office.com" id="LeftLinks_2148_3" class="office" xmlns="http://www.w3.org/1999/xhtml">Office</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/vstudio" id="LeftLinks_2148_4" class="visualStudio" xmlns="http://www.w3.org/1999/xhtml">Visual Studio</a>
+      </li>
+      <li>
+        <a href="http://developer.nokia.com/" title="Nokia" id="LeftLinks_2148_15" class="nokia" xmlns="http://www.w3.org/1999/xhtml">Nokia</a>
+      </li>
+      <li>
+        <a href="http://azure.microsoft.com/en-us/documentation/" target="_blank" id="LeftLinks_2148_12" xmlns="http://www.w3.org/1999/xhtml">Microsoft Azure</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/aa937802" id="LeftLinks_2148_5" xmlns="http://www.w3.org/1999/xhtml">Още...</a>
+      </li>
+    </ul>
+  </div>
+</div>    
+            <div id="rightLinks">
+                <div data-fragmentName="CenterLinks1" id="Fragment_CenterLinks1" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <div class="linkListTitle">Ресурси за обучение</div>
+    <ul class="links">
+      <li>
+        <a href="http://www.microsoftvirtualacademy.com/" id="CenterLinks1_2151_4" xmlns="http://www.w3.org/1999/xhtml">Microsoft Virtual Academy</a>
+      </li>
+      <li>
+        <a href="http://channel9.msdn.com/" id="CenterLinks1_2151_5" xmlns="http://www.w3.org/1999/xhtml">Channel 9</a>
+      </li>
+      <li>
+        <a href="http://www.interoperabilitybridges.com/" id="CenterLinks1_2151_6" xmlns="http://www.w3.org/1999/xhtml">Мостове за работна съвместимост</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/magazine/" id="CenterLinks1_2151_7" xmlns="http://www.w3.org/1999/xhtml">Списание на MSDN</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentName="CenterLinks2" id="Fragment_CenterLinks2" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <div class="linkListTitle">Общност</div>
+    <ul class="links">
+      <li>
+        <a href="https://social.msdn.microsoft.com/forums/en-us/home" id="CenterLinks2_2151_8" xmlns="http://www.w3.org/1999/xhtml">Форуми</a>
+      </li>
+      <li>
+        <a href="http://blogs.msdn.com/b/developer-tools/" id="CenterLinks2_2151_9" xmlns="http://www.w3.org/1999/xhtml">Блогове</a>
+      </li>
+      <li>
+        <a href="http://www.codeplex.com" id="CenterLinks2_2151_10" xmlns="http://www.w3.org/1999/xhtml">Codeplex</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentName="CenterLinks3" id="Fragment_CenterLinks3" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <div class="linkListTitle">Поддръжка</div>
+    <ul class="links">
+      <li>
+        <a href="https://msdn.microsoft.com/hh361695" id="CenterLinks3_2151_11" xmlns="http://www.w3.org/1999/xhtml">Самостоятелна поддръжка</a>
+      </li>
+    </ul>
+  </div>
+</div>
+                <div data-fragmentName="CenterLinks4" id="Fragment_CenterLinks4" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <div class="linkListTitle">Програми</div>
+    <ul class="links">
+      <li>
+        <a href="https://www.microsoft.com/bizspark/" id="CenterLinks4_2151_13" xmlns="http://www.w3.org/1999/xhtml">BizSpark (за стартиращи фирми)</a>
+      </li>
+      <li>
+        <a href="https://www.dreamspark.com/" id="CenterLinks4_2151_14" xmlns="http://www.w3.org/1999/xhtml">DreamSpark</a>
+      </li>
+      <li>
+        <a href="http://www.imaginecup.com" id="CenterLinks4_2151_17" xmlns="http://www.w3.org/1999/xhtml">Imagine Cup</a>
+      </li>
+    </ul>
+  </div>
+</div>                
+            </div>
+        </footer>
+    
+        <footer class="bottom">
+            <span class="localeContainer">
+                
+    <form class="selectLocale" id="selectLocaleForm" action="https://msdn.microsoft.com/bg-bg/selectlocale-dmc">
+        <input type="hidden" name="fromPage" value="https%3a%2f%2fmsdn.microsoft.com%2fbg-bg%2flibrary%2f618ayhy6.aspx" />
+        <a href="#" onclick="$('#selectLocaleForm').submit();return false;" title="Промяна на езика">България (Български)</a>
+    </form>
+
+
+            </span>
+        
+            <div data-fragmentName="BottomLinks" id="Fragment_BottomLinks" xmlns="http://www.w3.org/1999/xhtml">
+  
+  <div class="linkList">
+    <ul class="links horizontal">
+      <li>
+        <a href="https://msdn.microsoft.com/newsletter.aspx" id="BottomLinks_2148_7" xmlns="http://www.w3.org/1999/xhtml">Бюлетин</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/dn529288" id="BottomLinks_2148_8" xmlns="http://www.w3.org/1999/xhtml">Поверителност и бисквитки</a>
+      </li>
+      <li>
+        <a href="https://msdn.microsoft.com/cc300389" id="BottomLinks_2148_9" xmlns="http://www.w3.org/1999/xhtml">Условия на използване</a>
+      </li>
+      <li>
+        <a href="https://www.microsoft.com/en-us/legal/intellectualproperty/Trademarks/EN-US.aspx" id="BottomLinks_2148_10" xmlns="http://www.w3.org/1999/xhtml">Търговски марки</a>
+      </li>
+    </ul>
+  </div>
+</div>    
+            <span class="logoLegal">
+                <span class="logo"></span>
+                <span class="copyright">© 2015 Microsoft</span>
+            </span>
+        </footer>
+    </div>
+    
+
+
+            <div class="footerPrintView">
+                <div class="footerCopyrightPrintView">© 2015 Microsoft</div>
+            </div>
+
+            
+            
+    
+    
+    <input id="tocPaddingPerLevel" type="hidden" value="17" />
+
+
+
+            <input id="MtpsDevice" type="hidden" value="Default" />
+
+
+<![CDATA[ Third party scripts and code linked to or referenced from this website are licensed to you by the parties that own such code, not by Microsoft.  See ASP.NET Ajax CDN Terms of Use – http://www.asp.net/ajaxlibrary/CDN.ashx. ]]>
+
+            
+            
+            
+            
+            
+
+
+
+
+
+
+
+<noscript><div><img alt="DCSIMG" id="Img1" width="1" height="1" src="https://m.webtrends.com/dcsmgru7m99k7mqmgrhudo0k8_8c6m/njs.gif?dcsuri=/nojavascript&amp;WT.js=No" /></div></noscript>
+
+
+
+
+
+
+
+
+
+<noscript>
+  <a href="http://www.omniture.com" title="Web Analytics">
+    <img src="//msstonojsmsdn.112.2o7.net/b/ss/msstonojsmsdn/1/H.20.2--NS/0" height="1" width="1" border="0" alt="" />
+  </a>
+</noscript>
+
+
+
+
+<div id="globalRequestVerification">
+    <input name="__RequestVerificationToken" type="hidden" value="ezaHtGfhiJxqdTP1vOJKOh1dCtXbvdHugGmbX69aLdRzarAl_EZ2kIWupi3THd1VOFWQ5P53OFkO2KguNAD-ulb87LQ1" />
+</div>
+
+
+        </div>
+
+        
+        
+        
+        
+    <script type="text/javascript" class="mtps-injected">
+/*<![CDATA[*/
+(function(window,document){"use strict";function preload(scripts){for(var result=[],script,e,i=0;i<scripts.length;i++)script=scripts[i],script.hasOwnProperty("url")&&(e=document.createElement("script"),e.src=script.url,script.throwaway=e),result.push(script);return result}function inject(scripts,index){var script,elem;if(index>=scripts.length){delete mtps.injectScripts;return}script=scripts[index];elem=document.createElement("script");elem.className="mtps-injected";elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext;script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }");parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
+MTPS.injectScripts([
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"js\": \"https://i2-msdn.sec.s-msft.com\", \r\n\t\"css\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"\": \"https://\", \r\n\t\"xap\": \"https://msdn.microsoft.com\"\r\n});\r\n/**/" },
+	{ url: "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" },
+	{ txt: "//\n  var literalNormalizedUrl = \u0027/en-us/library/618ayhy6(l=en-us,v=vs.120).aspx\u0027;\n  var wt_nvr_ru = \u0027WT_NVR_RU\u0027;\n  var wt_fpcdom = \u0027.microsoft.com\u0027;\n  var wt_domlist = \u0027msdn.microsoft.com\u0027;\n  var wt_pathlist = \u0027\u0027;\n  var wt_paramlist = \u0027DCSext.mtps_devcenter\u0027;\n  var wt_siteid = \u0027MSDN\u0027;\n  var gDomain = \u0027m.webtrends.com\u0027;\n  var gDcsId = \u0027dcsmgru7m99k7mqmgrhudo0k8_8c6m\u0027;\n  var gFpc = \u0027WT_FPC\u0027;\n\n\n\n  if (document.cookie.indexOf(gFpc + \"=\") == -1) {\n    var wtidJs = document.createElement(\"script\");\n    wtidJs.src = \"//\" + gDomain + \"/\" + gDcsId + \"/wtid.js\";\n    document.getElementsByTagName(\"head\")[0].appendChild(wtidJs);\n  }\n\n\n\n  var detectedLocale = \u0027bg-bg\u0027;\n  var wtsp = \u0027msdnlib_devtools_lang\u0027;\n  var gTrackEvents = \u00270\u0027;\n/**/" },
+	{ txt: "/**/\n  var omni_guid = \"c51b664e-be0c-4d4a-b860-084603ae4d9b\";\n/**/" },
+	{ txt: "//\n\n            window.appInsightsId = \u002760854590-027a-4ae4-98be-2741a40f355f\u0027;\n            //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:Utilities,1:Banner,2:Layout,3:Header,2:Rating,3:Footer,0:Topic,4:webtrendsscript,5:omni_rsid_MSDN,0:AppInsightsPerf,6:Toc,2:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Epx/Shared/Content:1,/Areas/Epx/Themes/Base/Content:2,/Areas/Centers/Themes/StandardDevCenter/Content:3,/Areas/Global/Content/Webtrends/resources:4,/Areas/Global/Content/Omniture/resources/MSDN:5,/Areas/Library/Content:6\u0026amp;hashKey=55563A9397448A1D999243EE4A6C3B45\u0026amp;v=E96D8A3C53407A9CB818D93C287AE731" },
+	{ url: "https://i1.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox\u0026btnid=HeaderSearchButton\u0026brand=Msdn\u0026loc=bg-bg\u0026focusOnInit=false\u0026emptyWatermark=true\u0026searchButtonTooltip=Търсене в MSDN" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:PrintExportButton,1:NavigationResize;/Areas/Library/Themes/Base/Content:0,/Areas/Library/Content:1\u0026amp;hashKey=72684789A0F98A77C33C1AC3470E9ECF\u0026amp;v=E96D8A3C53407A9CB818D93C287AE731" },
+	{ txt: "MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = \u0027Разгъване\u0027; MTPS.LocalizedStrings.CollapseButtonTooltip = \u0027Свиване\u0027; MTPS.LocalizedStrings.EnhancedExpandTooltip = \u0027Щракнете за разширяване. Щракнете два пъти за разширяване на всички.\u0027; MTPS.LocalizedStrings.EnhancedCollapseTooltip = \u0027Щракнете за свиване. Щракнете два пъти за свиване на всички.\u0027; MTPS.LocalizedStrings.ExpandAllButtonTooltip = \u0027Разширяване на всички\u0027; MTPS.LocalizedStrings.CollapseAllButtonTooltip = \u0027Свиване на всички\u0027;" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:LibraryMemberFilter,1:Toc_Fixed,1:CodeSnippet,1:TopicNotInScope,1:CollapsibleArea,1:VersionSelector,1:SurveyBroker;/Areas/Library/Content:0,/Areas/Epx/Content/Scripts:1\u0026amp;hashKey=BA0D41FD888DE12A388DAF9CAC70144D\u0026amp;v=E96D8A3C53407A9CB818D93C287AE731" },
+	{ txt: "$(document).ready(function() {\n        try {\n            var token = $(\"#globalRequestVerification input[name=\u0027__RequestVerificationToken\u0027]\").clone();\n            $(\"#siteFeedbackForm\").append(token);\n        } catch(err) {\n            \n        }\n    });" }
+]);
+
+/*]]>*/
+</script></body>
+</html>
