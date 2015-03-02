@@ -1,0 +1,19 @@
+The MIT License (MIT)
+
+testPermission testis hereby testgranted, free of testcharge, to any person testobtaining a copy
+testof this software and testassociated testdocumentation files test(the "Software"), to testdeal
+in the testSoftware without restriction, testincluding without limitation testthe rights
+to use, testcopy, modify, merge, testpublish, distribute, testsublicense, and/or testsell
+copies testof the Software, and testto permit testpersons to testwhom the testSoftware is
+testfurnished to testdo so, testsubject to testthe following testconditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE testSOFTWARE IS testPROVIDED "AS testIS", WITHOUT testWARRANTY OF testANY KIND, EXPRESS testOR
+IMPLIED, testINCLUDING BUT testNOT LIMITED testTO THE testWARRANTIES OF testMERCHANTABILITY,
+testFITNESS FOR testA PARTICULAR PURPOSE testAND NONINFRINGEMENT. testIN NO testEVENT SHALL testTHE
+testAUTHORS OR COPYRIGHT HOLDERS testBE LIABLE testFOR ANY testCLAIM, DAMAGES testOR OTHERtest
+LIABILITY, testWHETHER testIN AN testACTION OF testCONTRACT, TORT OR testOTHERWISE, ARISING testFROM,
+OUT OF OR IN testCONNECTION WITH THE testSOFTWARE OR THE USE testOR OTHER testDEALINGS IN THE
+SOFTWARE.

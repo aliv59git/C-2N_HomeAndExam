@@ -1,0 +1,928 @@
+
+
+
+  
+    C# Reference
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+  
+  
+    
+      
+
+      
+      
+      
+  
+
+  
+  
+  
+  
+  
+    
+  
+  
+    
+      
+        Съгласен съм този сайт да използва „бисквитките” за анализ, персонализирано съдържание и реклама.
+        Научете повече
+        
+      
+    
+  
+  
+  
+
+    
+      
+      
+      
+
+      
+        
+          
+            
+              
+                
+              
+          
+
+          
+            
+
+Влизане
+
+  
+
+            
+              
+ Абонаменти за MSDN
+
+              
+ Изтегляне на инструменти
+
+              
+ 
+ 
+  
+   
+    http://www.facebook.com/microsoftdeveloper
+   
+   
+    https://twitter.com/msdev
+   
+   
+    http://plus.google.com/111221966647232053570/
+   
+  
+ 
+
+            
+          
+        
+
+        
+          
+            
+ 
+  
+   
+   
+  
+ 
+
+            
+              
+                
+    
+      
+            
+              Технологии
+                
+                    
+                      Cloud
+
+                          
+                    
+                    
+                      Mobile
+
+                          
+                    
+                    
+                      Web
+
+                          
+                    
+                    
+                      Business
+
+                          
+                    
+                    
+                      Data
+
+                          
+                    
+                    
+                      Gaming
+
+                          
+                    
+                
+            
+            
+              Изтегляния
+                
+                    
+                      Visual Studio
+
+                          
+                    
+                    
+                      MSDN subscriptions
+
+                          
+                    
+                    
+                      SDKs
+
+                          
+                    
+                
+            
+            
+              Програми
+                
+                    
+                      BizSpark
+
+                          
+                    
+                    
+                      Students
+
+                        
+                            
+                              Develop apps
+                            
+                            
+                              Blog
+                            
+                        
+                          
+                    
+                    
+                      Architects
+
+                        
+                            
+                              Overview
+                            
+                            
+                              Case studies
+                            
+                            
+                              Blueprints
+                            
+                            
+                              Blog
+                            
+                            
+                              Forums
+                            
+                        
+                          
+                    
+                    
+                      Events
+
+                          
+                    
+                
+            
+            
+              Общност
+                
+                    
+                      Forums
+
+                          
+                    
+                    
+                      Blogs
+
+                          
+                    
+                    
+                      Tech Advisors
+
+                          
+                    
+                    
+                      Channel 9
+
+                          
+                    
+                
+            
+            
+              Документация
+                
+                    
+                      APIs and reference
+
+                          
+                    
+                    
+                      Dev centers
+
+                          
+                    
+                
+            
+            
+              Примери
+            
+      
+    
+
+              
+            
+          
+
+          
+            
+ 
+  
+   
+   
+  
+  
+  
+ 
+
+            
+          
+        
+      
+    
+  
+  
+  
+
+    
+  
+    
+      Експортиране (0)
+    
+    
+      Отпечатване 
+    
+  
+  
+
+    
+    Разширяване на всички
+  
+
+  
+
+
+      
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+      
+MSDN Library      
+      
+Development Tools and Languages      
+      
+Visual Studio 2013      
+      
+Visual Basic and Visual C#      
+      
+Visual C#      
+      
+C# Reference      
+      
+C# Keywords      
+      
+C# Operators      
+      
+C# Preprocessor Directives      
+      
+C# Compiler Options      
+      
+C# Compiler Errors      
+      
+C# Language Specification      
+
+    
+
+    
+
+    
+    
+    
+    
+
+
+  
+  
+
+
+
+
+  
+
+
+
+
+
+
+  EN
+  Това съдържание не е налично на вашия език. На разположение е английската версия.
+
+
+
+
+
+
+    
+
+ 
+ 
+  C# Reference
+  
+  
+   
+    
+      Visual Studio 2013 
+    
+   
+   
+    
+    
+     
+      
+            Други версии
+          
+     
+     
+      
+     
+    
+    
+     
+      Visual Studio 2012
+     
+     
+      Visual Studio 2010
+     
+     
+      Visual Studio 2008
+     
+     
+      Visual Studio 2005
+     
+     
+      Visual Studio .NET 2003
+     
+    
+   
+  
+  
+  
+  
+   
+    
+     This section provides reference material about C# keywords, operators, compiler errors, and warnings.
+    
+    
+     
+     
+      
+       
+        
+        In This Section
+       
+       
+        
+       
+      
+     
+     
+      
+       
+      
+      
+       
+        
+         
+          C# Keywords
+         
+        
+       
+       
+        Provides links to information about C# keywords and syntax.
+       
+       
+        
+         
+          C# Operators
+         
+        
+       
+       
+        Provides links to information about C# operators and syntax.
+       
+       
+        
+         
+          C# Preprocessor Directives
+         
+        
+       
+       
+        Provides links to information about compiler commands for embedding in C# source code.
+       
+       
+        
+         
+          C# Compiler Options
+         
+        
+       
+       
+        Includes information about compiler options and how to use them.
+       
+       
+        
+         
+          C# Compiler Errors
+         
+        
+       
+       
+        Includes code snippets that demonstrate the cause and correction of C# compiler errors and warnings.
+       
+       
+        
+         
+          C# Language Specification
+         
+        
+       
+       
+        Provides pointers to the latest version of the C# Language Specification in Microsoft Word format.
+       
+      
+     
+    
+    
+     
+      
+       
+        
+        Related Sections
+       
+       
+        
+       
+      
+     
+     
+      
+       
+      
+      
+       
+        
+         C# FAQ
+        
+       
+       
+        Provides a growing list of C# Frequently Asked Questions in the C# Developer Center.
+       
+       
+        
+         C# KB articles in the Microsoft Knowledge Base
+        
+       
+       
+        Opens a Microsoft search page for Knowledge Base articles that are available on MSDN.
+       
+       
+        
+         
+          Visual C#
+         
+        
+       
+       
+        Provides a portal to Visual C# documentation.
+       
+       
+        
+         
+          C# Sample Applications
+         
+        
+       
+       
+        Provides a list of Visual C# samples and instructions about how to locate them on the local disk.
+       
+       
+        
+         
+          Using the Visual C# Development Environment
+         
+        
+       
+       
+        Provides links to conceptual and task topics that describe the IDE and Editor.
+       
+       
+        
+         
+          C# Programming Guide
+         
+        
+       
+       
+        Includes information about how to use the C# programming language.
+       
+      
+     
+    
+   
+  
+ 
+
+
+
+  
+
+
+
+
+
+  
+    Покажи:
+    
+      Наследен
+    
+    
+      Защитен
+    
+  
+
+  
+
+
+
+ 
+
+
+
+      
+      
+
+      
+  
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+  
+      
+      
+        
+            
+
+
+  
+    
+      Тази страница беше ли полезна?
+    
+    
+      Вашата обратна връзка за това съдържание е важна.Споделете мнението си.
+    
+    
+      Да
+      Не
+    
+    
+  
+  
+    
+      Допълнителна обратна връзка?
+    
+    
+    
+      1500 знака остават
+    
+    
+      Подаване
+      Пропуснете това
+    
+  
+  
+    
+      Благодарим ви!
+    
+    
+      Ценим обратната ви връзка.
+    
+  
+  
+  
+  
+
+  
+                    
+        
+      
+
+    
+      
+ 
+ 
+  Центрове за разработчици
+  
+   
+    Windows
+   
+   
+    Office
+   
+   
+    Visual Studio
+   
+   
+    Nokia
+   
+   
+    Microsoft Azure
+   
+   
+    Още...
+   
+  
+ 
+  
+      
+        
+ 
+ 
+  Ресурси за обучение
+  
+   
+    Microsoft Virtual Academy
+   
+   
+    Channel 9
+   
+   
+    Мостове за работна съвместимост
+   
+   
+    Списание на MSDN
+   
+  
+ 
+
+        
+ 
+ 
+  Общност
+  
+   
+    Форуми
+   
+   
+    Блогове
+   
+   
+    Codeplex
+   
+  
+ 
+
+        
+ 
+ 
+  Поддръжка
+  
+   
+    Самостоятелна поддръжка
+   
+  
+ 
+
+        
+ 
+ 
+  Програми
+  
+   
+    BizSpark (за стартиращи фирми)
+   
+   
+    DreamSpark
+   
+   
+    Imagine Cup
+   
+  
+ 
+        
+      
+    
+  
+    
+      
+        
+  
+    
+    България (Български)
+  
+
+
+      
+    
+      
+ 
+ 
+  
+   
+    Бюлетин
+   
+   
+    Поверителност и бисквитки
+   
+   
+    Условия на използване
+   
+   
+    Търговски марки
+   
+  
+ 
+  
+      
+        
+        © 2015 Microsoft
+      
+    
+  
+  
+
+
+      
+        © 2015 Microsoft
+      
+
+      
+      
+  
+  
+  
+
+
+
+      
+
+
+
+
+      
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+ 
+
+
+
+
+
+
+  
+
+
+
+    
+
+    
+    
+    
+    
+  
+/*=scripts.length){delete mtps.injectScripts;return}script=scripts[index];elem=document.createElement("script");elem.className="mtps-injected";elem.async=!1;var isLoaded=!1,timeoutId=0,injectNextFnName="",injectNext=elem.onerror=function(){isLoaded||(isLoaded=!0,inject(scripts,index+1),window.clearTimeout(timeoutId),elem.onload=elem.onerror=elem.onreadystatechange=null,injectNextFnName&&delete mtps[injectNextFnName],elem.removeEventListener&&elem.removeEventListener("load",injectNext,!1))};elem.addEventListener?elem.addEventListener("load",injectNext,!1):elem.readyState==="uninitialized"?elem.onreadystatechange=function(){(this.readyState==="loaded"||this.readyState==="complete")&&injectNext()}:elem.onload=injectNext;script.hasOwnProperty("url")?(timeoutId=window.setTimeout(injectNext,12e4),elem.src=script.url):(injectNextFnName="_injectNextScript_"+index,mtps[injectNextFnName]=injectNext,timeoutId=window.setTimeout(injectNext,2e3),elem.text="try {\n"+script.txt+"\n} finally { MTPS."+injectNextFnName+" && MTPS."+injectNextFnName+"(); }");parent.appendChild(elem)}var mtps=window.MTPS||(window.MTPS={}),parent=document.getElementsByTagName("head")[0];mtps.injectScripts=function(scripts){inject(preload(scripts),0)}})(window,document);
+MTPS.injectScripts([
+	{ txt: "/**/\r\n(window.MTPS || (window.MTPS = {})).cdnDomains || (window.MTPS.cdnDomains = { \r\n\t\"image\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"js\": \"https://i2-msdn.sec.s-msft.com\", \r\n\t\"css\": \"https://i-msdn.sec.s-msft.com\", \r\n\t\"\": \"https://\", \r\n\t\"xap\": \"https://msdn.microsoft.com\"\r\n});\r\n/**/" },
+	{ url: "https://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js" },
+	{ txt: "//\n var literalNormalizedUrl = \u0027/en-us/library/618ayhy6(l=en-us,v=vs.120).aspx\u0027;\n var wt_nvr_ru = \u0027WT_NVR_RU\u0027;\n var wt_fpcdom = \u0027.microsoft.com\u0027;\n var wt_domlist = \u0027msdn.microsoft.com\u0027;\n var wt_pathlist = \u0027\u0027;\n var wt_paramlist = \u0027DCSext.mtps_devcenter\u0027;\n var wt_siteid = \u0027MSDN\u0027;\n var gDomain = \u0027m.webtrends.com\u0027;\n var gDcsId = \u0027dcsmgru7m99k7mqmgrhudo0k8_8c6m\u0027;\n var gFpc = \u0027WT_FPC\u0027;\n\n\n\n if (document.cookie.indexOf(gFpc + \"=\") == -1) {\n  var wtidJs = document.createElement(\"script\");\n  wtidJs.src = \"//\" + gDomain + \"/\" + gDcsId + \"/wtid.js\";\n  document.getElementsByTagName(\"head\")[0].appendChild(wtidJs);\n }\n\n\n\n var detectedLocale = \u0027bg-bg\u0027;\n var wtsp = \u0027msdnlib_devtools_lang\u0027;\n var gTrackEvents = \u00270\u0027;\n/**/" },
+	{ txt: "/**/\n var omni_guid = \"c51b664e-be0c-4d4a-b860-084603ae4d9b\";\n/**/" },
+	{ txt: "//\n\n      window.appInsightsId = \u002760854590-027a-4ae4-98be-2741a40f355f\u0027;\n      //" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:Utilities,1:Banner,2:Layout,3:Header,2:Rating,3:Footer,0:Topic,4:webtrendsscript,5:omni_rsid_MSDN,0:AppInsightsPerf,6:Toc,2:SearchBox;/Areas/Epx/Content/Scripts:0,/Areas/Epx/Shared/Content:1,/Areas/Epx/Themes/Base/Content:2,/Areas/Centers/Themes/StandardDevCenter/Content:3,/Areas/Global/Content/Webtrends/resources:4,/Areas/Global/Content/Omniture/resources/MSDN:5,/Areas/Library/Content:6\u0026amp;hashKey=55563A9397448A1D999243EE4A6C3B45\u0026amp;v=E96D8A3C53407A9CB818D93C287AE731" },
+	{ url: "https://i1.services.social.microsoft.com/search/Widgets/SearchBox.jss?boxid=HeaderSearchTextBox\u0026btnid=HeaderSearchButton\u0026brand=Msdn\u0026loc=bg-bg\u0026focusOnInit=false\u0026emptyWatermark=true\u0026searchButtonTooltip=Търсене в MSDN" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:PrintExportButton,1:NavigationResize;/Areas/Library/Themes/Base/Content:0,/Areas/Library/Content:1\u0026amp;hashKey=72684789A0F98A77C33C1AC3470E9ECF\u0026amp;v=E96D8A3C53407A9CB818D93C287AE731" },
+	{ txt: "MTPS = window.MTPS || {}; MTPS.LocalizedStrings = window.MTPS.LocalizedStrings || {}; MTPS.LocalizedStrings.ExpandButtonTooltip = \u0027Разгъване\u0027; MTPS.LocalizedStrings.CollapseButtonTooltip = \u0027Свиване\u0027; MTPS.LocalizedStrings.EnhancedExpandTooltip = \u0027Щракнете за разширяване. Щракнете два пъти за разширяване на всички.\u0027; MTPS.LocalizedStrings.EnhancedCollapseTooltip = \u0027Щракнете за свиване. Щракнете два пъти за свиване на всички.\u0027; MTPS.LocalizedStrings.ExpandAllButtonTooltip = \u0027Разширяване на всички\u0027; MTPS.LocalizedStrings.CollapseAllButtonTooltip = \u0027Свиване на всички\u0027;" },
+	{ url: "https://i2-msdn.sec.s-msft.com/Combined.js?resources=0:LibraryMemberFilter,1:Toc_Fixed,1:CodeSnippet,1:TopicNotInScope,1:CollapsibleArea,1:VersionSelector,1:SurveyBroker;/Areas/Library/Content:0,/Areas/Epx/Content/Scripts:1\u0026amp;hashKey=BA0D41FD888DE12A388DAF9CAC70144D\u0026amp;v=E96D8A3C53407A9CB818D93C287AE731" },
+	{ txt: "$(document).ready(function() {\n    try {\n      var token = $(\"#globalRequestVerification input[name=\u0027__RequestVerificationToken\u0027]\").clone();\n      $(\"#siteFeedbackForm\").append(token);\n    } catch(err) {\n      \n    }\n  });" }
+]);
+
+/*]]*/
+
+

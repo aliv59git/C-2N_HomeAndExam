@@ -1,0 +1,20 @@
+The MIT License (MIT)
+
+  hereby , free of , to any person  a copy
+ this software and   files (the "Software"), to 
+in the  without restriction,  without limitation  rights
+to use, , modify, merge, , distribute, , and/or 
+copies  the Software, and  permit  to  the  is
+ to  so,  to  following :
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE  IS  "AS ", WITHOUT  OF  KIND, EXPRESS 
+IMPLIED,  BUT  LIMITED  THE  OF ,
+ FOR  PARTICULAR PURPOSE  NONINFRINGEMENT.  NO  SHALL 
+ OR COPYRIGHT HOLDERS  LIABLE  ANY , DAMAGES  OTHERtest
+LIABILITY,   AN  OF , TORT OR , ARISING ,
+OUT OF OR IN  WITH THE  OR THE USE  OTHER  IN THE
+SOFTWARE.
+
