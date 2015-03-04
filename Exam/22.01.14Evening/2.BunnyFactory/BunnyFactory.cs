@@ -26,7 +26,7 @@ class BunnyFactory
         while (true)
         {
             int workingCages = 0;
-            for (int t = 0; t <= count; t++)
+            for (int t = 0; t <= Math.Min((count), input.Count-1); t++)
             {
                 workingCages += input[t];
             }
@@ -41,26 +41,32 @@ class BunnyFactory
                     sum += input[i];
                     product *= input[i];
                 }
-                sb.Append(sum);
-                sb.Append(product);
-                foreach (var digit in sb.ToString())
+                string sumD = sum.ToString();
+                string productD = product.ToString();
+                for (int i = 0; i < sumD.Length; i++)
                 {
-                    if (digit == '0' || digit == '1')
+                    if ((sumD[i] != '0') && (sumD[i] != '1'))
                     {
-                        sb.Remove(sb.ToString().IndexOf(digit), 1);
+                        sb.Append(sumD[i]);
                     }
                 }
-
-                for (int j = workingCages + count+1; j < input.Count; j++)
+                for (int j = 0; j < productD.Length; j++)
                 {
-                    sb.Append(input[j].ToString());
+                    if ((productD[j] != '0') && (productD[j] != '1'))
+                    {
+                        sb.Append(productD[j]);
+                    }
+                }
+                for (int k = workingCages + count + 1; k < input.Count; k++)
+                {
+                    sb.Append(input[k].ToString());
                 }
 
                 input.RemoveRange(0, input.Count);
                 string tmp = sb.ToString();
                 for (int m = 0; m < tmp.Length; m++)
                 {
-                    input.Add(tmp[m] - 48);
+                    input.Add(tmp[m] - '0');
                 }
                 count++;
             }

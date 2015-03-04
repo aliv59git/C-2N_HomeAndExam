@@ -34,9 +34,9 @@ class Patterns
         bool success = false;
         long bestSum = 0;
         long currentSum = 0;
-        for (int i = 0; i < matrix.GetLength(0)-3+1; i++)
+        for (int i = 0; i < matrix.GetLength(0)-2; i++)
         {
-            for (int j = 0; j < matrix.GetLength(1)-5+1; j++)
+            for (int j = 0; j < matrix.GetLength(1)-4; j++)
             {
                 if ((matrix[i, j+1] - matrix[i, j]==1) && (matrix[i, j+2]- matrix[i, j+1]==1) && (matrix[i+1, j+2]-matrix[i, j + 2]==1) && (matrix[i+2, j + 2]- matrix[i +1, j + 2]==1 ) && (matrix[i + 2, j + 3]- matrix[i + 2, j + 2]==1 ) && (matrix[i + 2, j + 4]- matrix[i + 2, j + 3]==1))
                 {
