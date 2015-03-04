@@ -19,18 +19,6 @@ class Patterns
             }
         }
 
-        for (int u = 0; u < n; u++)
-        {
-            for (int t = 0; t < n; t++)
-            {
-                Console.Write("{0}  ", matrix[u, t]);
-            }
-            Console.WriteLine();
-        }
-
-
-
-
         bool success = false;
         long bestSum = 0;
         long currentSum = 0;
@@ -38,9 +26,14 @@ class Patterns
         {
             for (int j = 0; j < matrix.GetLength(1)-4; j++)
             {
-                if ((matrix[i, j+1] - matrix[i, j]==1) && (matrix[i, j+2]- matrix[i, j+1]==1) && (matrix[i+1, j+2]-matrix[i, j + 2]==1) && (matrix[i+2, j + 2]- matrix[i +1, j + 2]==1 ) && (matrix[i + 2, j + 3]- matrix[i + 2, j + 2]==1 ) && (matrix[i + 2, j + 4]- matrix[i + 2, j + 3]==1))
+                if ((matrix[i, j+1] - matrix[i, j]==1) && 
+                    (matrix[i, j+2]- matrix[i, j+1]==1) && 
+                    (matrix[i+1, j+2]-matrix[i, j + 2]==1) && 
+                    (matrix[i+2, j + 2]- matrix[i +1, j + 2]==1 ) && 
+                    (matrix[i + 2, j + 3]- matrix[i + 2, j + 2]==1 ) && 
+                    (matrix[i + 2, j + 4]- matrix[i + 2, j + 3]==1))
                 {
-                    currentSum = 7 * matrix[i, j] + 21;
+                    currentSum += 7 * matrix[i, j] + 21;
                     if (bestSum < currentSum)
                     {
                         bestSum = currentSum;
@@ -51,18 +44,18 @@ class Patterns
 
             }
         }
-        if (success)
+
+        if (success==true)
         {
-            Console.WriteLine("YES{{0}}", bestSum);
+            Console.WriteLine("YES " + bestSum);
         }
-        else
+        else if (success == false)
         {
             for (int k = 0; k < n; k++)
             {
                 bestSum += matrix[k, k];
             }
-            Console.WriteLine("NO{{0}}", bestSum);
+            Console.WriteLine("NO "+ bestSum);
         }
-
     }
 }
