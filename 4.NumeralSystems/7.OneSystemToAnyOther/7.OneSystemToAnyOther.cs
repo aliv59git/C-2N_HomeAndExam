@@ -19,7 +19,7 @@ namespace _7.OneSystemToAnyOther
             {
                 switch (str[i])
                 {
-                    case 'A': result += (ulong)(10 * multiplyer); multiplyer *= s; break;
+                    case 'a': result += (ulong)(10 * multiplyer); multiplyer *= s; break;
                     case 'B': result += (ulong)(11 * multiplyer); multiplyer *= s; break;
                     case 'C': result += (ulong)(12 * multiplyer); multiplyer *= s; break;
                     case 'D': result += (ulong)(13 * multiplyer); multiplyer *= s; break;
