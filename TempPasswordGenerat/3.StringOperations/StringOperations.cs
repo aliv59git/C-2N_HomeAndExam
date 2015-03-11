@@ -33,9 +33,6 @@ namespace _3.StringOperations
             }
             return sb.ToString().Trim();
         }
-        
-
-
 
         static void Main(string[] args)
         {

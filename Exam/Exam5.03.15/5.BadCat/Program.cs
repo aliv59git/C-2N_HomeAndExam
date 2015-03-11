@@ -56,18 +56,36 @@ namespace _5.BadCat
                 }                    
 			}
 
-
             numbers.Sort();
-            for (int i = 1; i < numbers.Count; i++)
+            for (int i = 0; i < numbers.Count-1; i++)
             {
-                if (numbers[i] == numbers[i - 1])
+                int first = numbers[i] / 10;
+                int second = numbers[i] % 10;
+                for (int j = i+1; j < numbers.Count; j++)
                 {
-                    numbers.Remove(i);
+                    if ((numbers[j]/10 == first)||(numbers[j]%10 == first))
+                    {
+                        numbers[i] = second;
+                    }
+                }
+                for (int k = i + 1; k < numbers.Count; k++)
+                {
+                    if ((numbers[k] / 10 == second) || (numbers[k] % 10 == second))
+                    {
+                        numbers[i] = first;
+                    }
+                }
+                if (first == second)
+                {
+                    numbers[i] = first;
                 }
             }
+            if (numbers[0] < 10)
+            {
+                numbers[0] = numbers[0] % 10;
+            }
 
-            string result = string.Join("", numbers);
-            Console.WriteLine(result.Distinct().ToArray());
+            Console.WriteLine(string.Join("", numbers));
 
         }
     }

@@ -14,14 +14,14 @@ namespace _15.PrimeNumbersByEratosten
         static void Main(string[] args)
         {
             List<int> primeByEratosten = new List<int>();
-            for (int i = 2; i < 10000000; i++)
+            for (int i = 2; i < 100000; i++)
             {
                 primeByEratosten.Add(i);
             }
             int p=2, multiplyer=1;
-            while (p * multiplyer < 10000000)
+            while (p * multiplyer < 100000)
             {
-                while (p * multiplyer < 10000000)
+                while (p * multiplyer < 100000)
                 {
                     multiplyer++;
                     primeByEratosten.Remove(p * multiplyer);

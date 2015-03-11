@@ -2,7 +2,8 @@
 
 	Char.IsWhiteSpace; isNullOrEmptyString
 
-
+	// Get distinct elements and convert into a list again. Премахва еднакви елементи от листа. 
+	List<int> distinct = list.Distinct().ToList();
 
 Важни команди и изрази при МАСИВИ лекцията:
 
