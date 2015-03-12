@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.21005.1
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1.CalculationProblem", "1.CalculationProblem\1.CalculationProblem.csproj", "{664518FA-143D-48A6-976A-CE3537821C71}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4.Konspiration", "4.Konspiration\4.Konspiration.csproj", "{4FF4DE96-FE81-4984-8379-6BB63CC1C7CD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.BadCat", "5.BadCat\5.BadCat.csproj", "{CA9399AD-913B-42D8-89A1-F6720B0C3999}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5.1.NewBadCat", "5.1.NewBadCat\5.1.NewBadCat.csproj", "{6A6AC0B2-FF39-4C2A-B2DE-B519D0FBEFD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{CA9399AD-913B-42D8-89A1-F6720B0C3999}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA9399AD-913B-42D8-89A1-F6720B0C3999}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA9399AD-913B-42D8-89A1-F6720B0C3999}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A6AC0B2-FF39-4C2A-B2DE-B519D0FBEFD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A6AC0B2-FF39-4C2A-B2DE-B519D0FBEFD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A6AC0B2-FF39-4C2A-B2DE-B519D0FBEFD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A6AC0B2-FF39-4C2A-B2DE-B519D0FBEFD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
