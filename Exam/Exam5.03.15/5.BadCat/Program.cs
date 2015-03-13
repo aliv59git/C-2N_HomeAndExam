@@ -58,65 +58,39 @@ namespace _5.BadCat
 			}
 
             numbers.Sort();
-            string res = string.Join("", numbers);
-            if (res[0] == '0')
+            List<char> result = string.Join("", numbers).ToList();
+            if (result[0] == '0')
             {
-                res = res.Substring(1);
+                result.Remove('0');
             }
-            Console.WriteLine(res.Distinct().ToArray());
-
-
-
-
-
-
-
-            bool isGreater = false;
-
-            StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < res.Length - 1; i++)
+            for (int i = 0; i < result.Count-1; i++)
             {
-                int tempInd = res.IndexOf(res[i], i + 1);
-                if (tempInd != -1)
+                char ch = result[i];
+                for (int j = i+1; j < result.Count; j++)
                 {
-                    for (int j = i + 1; j < tempInd; j++)
+                    if (result[j] == ch)
                     {
-                        if (res[i] > res[j])
+                        bool isRemoved = false;
+                        for (int t = i+1; t <= j; t++)
                         {
-                            isGreater = true;
+                            if (result[t] > ch)
+                            {
+                                result.RemoveAt(j);
+                                result.Insert(j, '*');
+                                isRemoved = true;
+                            }
                         }
-                    }
-                    if (isGreater == true)
-                    {
-                        res = res.Substring(0, i) + "*" + res.Substring(i + 1);
-                    }
-                    else
-                    {
-                        if (tempInd + 1 <= res.Length - 1)
+                        if (isRemoved == false)
                         {
-                            res = res.Substring(0, tempInd) + "*" + res.Substring(tempInd + 1);
+                            result.RemoveAt(i);
+                            result.Insert(i, '*');
                         }
-                        else
-                        {
-                            res = res.Substring(0, tempInd) + "*";
-                        }
+                        isRemoved = false;
                     }
                 }
-                tempInd = -1;
-                isGreater = false;
             }
-
-            foreach (var item in res)
-            {
-                if (item != '*')
-                {
-                    sb.Append(item);
-                }
-            }
-            Console.WriteLine(sb.ToString());
-
-            //Console.WriteLine(string.Join("", numbers.Distinct().ToArray()));
-
+            result.RemoveAll(ch => ch == '*'); 
+            Console.WriteLine(string.Join("", result));
         }
     }
 }
