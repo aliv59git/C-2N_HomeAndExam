@@ -56,7 +56,7 @@ namespace _5.BadCat
                     }
                 }                    
 			}
-
+            Console.WriteLine(string.Join("", numbers));
             numbers.Sort();
             List<char> result = string.Join("", numbers).ToList();
             if (result[0] == '0')
@@ -89,6 +89,8 @@ namespace _5.BadCat
                     }
                 }
             }
+            Console.WriteLine(string.Join("", result));
+
             result.RemoveAll(ch => ch == '*'); 
             Console.WriteLine(string.Join("", result));
         }
